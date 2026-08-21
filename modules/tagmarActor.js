@@ -94,12 +94,12 @@ export class tagmarActor extends Actor {
         if (update.hasOwnProperty('_id')) delete update['_id'];
         if (Object.keys(update).length > 0) {
             let scrolling = "";
-            let scrollStyle = {fill: "red", fontFamily: "GoudyMediaeval", strokeThickness: 2, stroke: "black"};
+            let scrollStyle = {fill: "red", fontFamily: "Signika", strokeThickness: 2, stroke: "black"};
             for (let key of Object.keys(update)) {
                 let att = key.replace("system.", "").replace('.value', "");
                 if (dano.isCura) {
                     scrolling += `${att.toUpperCase()} +${olds[key] *-1}\n`;
-                    scrollStyle = {fill: "green", fontFamily: "GoudyMediaeval", strokeThickness: 2, stroke: "black"};
+                    scrollStyle = {fill: "green", fontFamily: "Signika", strokeThickness: 2, stroke: "black"};
                 }
                 else {
                     scrolling += `${att.toUpperCase()} -${olds[key]}\n`;
