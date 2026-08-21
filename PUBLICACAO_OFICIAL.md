@@ -24,6 +24,7 @@ Este arquivo acompanha a preparação do **Tagmar 3ER Oficial** para distribuiç
 - [x] Confirmar que nenhum arquivo usado pelo sistema está ausente.
 - [x] Testar uma instalação limpa no Foundry VTT 14 (Build 367).
 - [x] Confirmar a criação e abertura de um mundo isolado com os módulos obrigatórios e os nove compêndios.
+- [x] Confirmar instalação paralela com `tagmar_rpg` e `tagmar3er_oficial` exibidos como sistemas distintos.
 - [ ] Testar criação de personagem, criaturas, combate, itens e calendário.
 - [x] Gerar ZIP contendo `system.json` na raiz.
 - [x] Publicar manifesto e ZIP em uma versão do GitHub Releases.
