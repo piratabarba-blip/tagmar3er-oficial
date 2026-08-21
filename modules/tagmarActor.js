@@ -136,7 +136,7 @@ export class tagmarActor extends Actor {
             resultado = col_tab[Dresult];
             PrintResult = await this.evalAtrib(resultado);
             let coluna = "<h4 class='mediaeval rola'>Coluna:" + col_tab[0] + "</h4>";
-            if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+            if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
                 this.dadosColoridos.dadosColoridos(resultado, r);
             }
             await r.toMessage({
@@ -154,7 +154,7 @@ export class tagmarActor extends Actor {
                     resultado = col_tab[ds.total];
                     PrintResult = await this.evalAtrib(resultado);
                     let coluna = "<h4 class='mediaeval rola'>Coluna:" + col_tab[0] + "</h4>";
-                    if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+                    if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
                         this.dadosColoridos.dadosColoridos(resultado, ds);
                     }
                     await ds.toMessage({
@@ -172,7 +172,7 @@ export class tagmarActor extends Actor {
                         resultado = col_tab[ds.total];
                         PrintResult = await this.evalAtrib(resultado);
                         let coluna = "<h4 class='mediaeval rola'>Coluna:" + col_tab[0] + "</h4>";
-                        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+                        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
                             this.dadosColoridos.dadosColoridos(resultado, ds);
                         }
                         await ds.toMessage({
@@ -186,7 +186,7 @@ export class tagmarActor extends Actor {
                     resultado = col_tab[dado.total];
                     PrintResult = await this.evalAtrib(resultado);
                     let coluna = "<h4 class='mediaeval rola'>Coluna:" + col_tab[0] + "</h4>";
-                    if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+                    if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
                         this.dadosColoridos.dadosColoridos(resultado, dado);
                     }
                     await dado.toMessage({
@@ -239,12 +239,12 @@ export class tagmarActor extends Actor {
         const Dresult = r.total;
         if ((Dresult >= valorSucess || Dresult == 20) && Dresult > 1) { // Sucesso
             stringSucesso = "<h1 class='mediaeval rola' style='text-align:center; color: white;background-color:#00a1e8;'>SUCESSO</h1>";
-            if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+            if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
                 this.dadosColoridos.dadosColoridos("azul", r);
             }
         } else {    // Insucesso
             stringSucesso = "<h1 class='mediaeval rola' style='text-align:center; color: white;background-color:#ff0000;'>FRACASSO</h1>";
-            if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+            if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
                 this.dadosColoridos.dadosColoridos("vermelho", r);
             }
         }
@@ -272,7 +272,7 @@ export class tagmarActor extends Actor {
         let PrintResult = await this.evalAtrib(resultado);
         const actorImg = `<img src='${this.img}' style='display:block;border-width:0;margin-left:auto;margin-right:auto;'/>`;
         let coluna = "<h4 class='mediaeval rola'>Coluna:" + col + "</h4>";
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             this.dadosColoridos.dadosColoridos(resultado, r);
         }
         await r.toMessage({
@@ -392,7 +392,7 @@ export class tagmarActor extends Actor {
             }
             conteudo += PrintResult;
         }
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             this.dadosColoridos.dadosColoridos(m_cor, melhor);
         }
         melhor.toMessage({

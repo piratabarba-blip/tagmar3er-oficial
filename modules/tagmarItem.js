@@ -23,7 +23,7 @@ export class tagmarItem extends Item {
         let conteudo = "<h3 class='mediaeval rola'>Informações adicionais: </h3>" + "<div class='mediaeval rola rola_desc'>" + this.system.tarefAperf + "</div>";
         let PrintResult = await this.evalHab(resultado);
         let coluna = "<h4 class='mediaeval rola'>Coluna:" + colunarolada + "</h4>";
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             dadosColoridos.dadosColoridos(resultado, r);
         }
         r.toMessage({
@@ -143,7 +143,7 @@ export class tagmarItem extends Item {
             }
             conteudo += PrintResult;
         }
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             dadosColoridos.dadosColoridos(m_cor, melhor);
         }
         melhor.toMessage({
@@ -235,7 +235,7 @@ export class tagmarItem extends Item {
         else if (resultado == "azul" || resultado == "roxo") PrintResult = "<h1 class='mediaeval rola' style='color: white; text-align:center;background-color:#00a1e8;'>Azul - Muito Difícil</h1>";
         else if (resultado == "cinza") PrintResult = "<h1 class='mediaeval rola' style='color: black; text-align:center;background-color:#bfbfbf;'>Cinza - Crítico Absurdo</h1>";
         let coluna = "<h4 class='mediaeval rola'>Coluna:" + coluna_rolada + "</h4>";
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             dadosColoridos.dadosColoridos(resultado, r);
         }
         r.toMessage({
@@ -383,7 +383,7 @@ export class tagmarItem extends Item {
             }
             conteudo += PrintResult;
         }
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             dadosColoridos.dadosColoridos(m_cor, melhor);
         }
         melhor.toMessage({
@@ -641,7 +641,7 @@ export class tagmarItem extends Item {
         let dano_text = `<h2 class='mediaeval rola rola_dano' style='text-align: center;'>${actionLabel}: ${dano_total}</h2>`;
         let table_dano = `<table style="margin-left: auto;margin-right: auto;text-align:center;" class="mediaeval"><tr><th>25%</th><th>50%</th><th>75%</th><th>100%</th></tr><tr><td>${this.system.dano.d25}</td><td>${this.system.dano.d50}</td><td>${this.system.dano.d75}</td><td>${this.system.dano.d100}</td></tr></table>`;
         if (critico && !(this.flags?.tagmarSync?.healTarget && falha)) dano_text = table_dano;
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             dadosColoridos.dadosColoridos(resultado, r);
         }
         const {button, buttonC} = this._chatActionButtons(dano_total, critico, falha);
@@ -836,7 +836,7 @@ export class tagmarItem extends Item {
         let dano_text = `<h1 class='mediaeval rola rola_dano' style='text-align: center;'>${actionLabel}: ${dano_novo}</h1>`;
         let table_dano = `<table style="margin-left: auto;margin-right: auto;text-align:center;" class="mediaeval"><tr><th>25%</th><th>50%</th><th>75%</th><th>100%</th></tr><tr><td>${this.system.dano.d25}</td><td>${this.system.dano.d50}</td><td>${this.system.dano.d75}</td><td>${this.system.dano.d100}</td></tr></table>`;
         if (critico && !(healTarget && falha)) dano_text = table_dano;
-        if (game.settings.get('tagmar_rpg', 'dadosColoridos')) {
+        if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
             dadosColoridos.dadosColoridos(resultado, r);
         }
         const {button, buttonC} = this._chatActionButtons(dano_novo, critico, falha);

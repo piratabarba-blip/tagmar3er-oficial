@@ -1,8 +1,8 @@
 {
-  "id": "tagmar_rpg",
+  "id": "tagmar3er_oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.1",
+  "version": "2.7.0-v14.1-official.2",
   "relationships": {
     "requires": [
       {
@@ -81,7 +81,7 @@
     {
       "name": "criando-fichas-t3er",
       "label": "Tagmar — Criação de Fichas (Edição Sincronizada)",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/criando-fichas-t3er",
       "type": "Item",
       "ownership": {
@@ -92,7 +92,7 @@
     {
       "name": "reino-de-tagmar-t3er",
       "label": "Reino de Tagmar — Referências Oficiais (Edição Sincronizada)",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/reino-de-tagmar-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -103,7 +103,7 @@
     {
       "name": "objetos-magicos-t3er",
       "label": "Objetos Mágicos — Itens Oficiais (Edição Sincronizada)",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/objetos-magicos-t3er",
       "type": "Item",
       "ownership": {
@@ -114,7 +114,7 @@
     {
       "name": "objetos-magicos-regras-t3er",
       "label": "Objetos Mágicos — Guia e Regras (Edição Sincronizada)",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/objetos-magicos-regras-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -125,7 +125,7 @@
     {
       "name": "o-imperio-t3er",
       "label": "O Império — Referências Oficiais (Edição Sincronizada)",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/o-imperio-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -136,7 +136,7 @@
     {
       "name": "criaturas-t3er",
       "label": "Criaturas de Tagmar — Edição Oficial Sincronizada",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/criaturas-t3er",
       "type": "Actor",
       "ownership": {
@@ -147,7 +147,7 @@
     {
       "name": "registro-de-datas",
       "label": "Registro de Datas",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/registro-de-datas",
       "type": "JournalEntry",
       "ownership": {
@@ -158,7 +158,7 @@
     {
       "name": "terras-selvagens-t3er",
       "label": "Terras Selvagens — Criação de Fichas (Edição Sincronizada)",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/terras-selvagens-t3er",
       "type": "Item",
       "ownership": {
@@ -169,7 +169,7 @@
     {
       "name": "terras-selvagens-regras-t3er",
       "label": "Terras Selvagens — Regras (Edição Sincronizada)",
-      "system": "tagmar_rpg",
+      "system": "tagmar3er_oficial",
       "path": "packs/terras-selvagens-regras-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -186,5 +186,5 @@
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
   "manifest": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/latest/download/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.1/tagmar3er-oficial.zip"
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.2/tagmar3er-oficial.zip"
 }

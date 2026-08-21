@@ -14,12 +14,12 @@ const packsArgument = process.argv.find(argument => argument.startsWith("--packs
 const root = resolve(rootArgument ?? defaultRoot);
 const packsRoot = packsArgument ? resolve(packsArgument) : null;
 const system = JSON.parse(await readFile(join(root, "system.json"), "utf8"));
-const imagePattern = /(?:https?:\/\/[^\s"'<>]+|(?:systems\/tagmar_rpg|modules\/[^/\s]+|icons)\/[^\s"'<>]+?)\.(?:png|jpe?g|webp|gif|svg|avif|webm|mp4|wav|mp3|ogg|cur)(?:\?[^\s"'<>]*)?/gi;
+const imagePattern = /(?:https?:\/\/[^\s"'<>]+|(?:systems\/tagmar3er_oficial|modules\/[^/\s]+|icons)\/[^\s"'<>]+?)\.(?:png|jpe?g|webp|gif|svg|avif|webm|mp4|wav|mp3|ogg|cur)(?:\?[^\s"'<>]*)?/gi;
 const references = new Map();
 
 function category(reference) {
   if (reference.startsWith("icons/")) return "foundry-core";
-  if (reference.startsWith("systems/tagmar_rpg/")) return "system-local";
+  if (reference.startsWith("systems/tagmar3er_oficial/")) return "system-local";
   if (reference.startsWith("modules/")) return "module";
   if (/^https?:\/\//i.test(reference)) return "external";
   return "other";

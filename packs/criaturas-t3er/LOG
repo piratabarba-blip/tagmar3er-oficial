@@ -1,70 +1,68 @@
-2026/08/20-22:04:55.766 9750 Delete type=3 #1
-2026/08/20-22:04:56.139 7b50 Level-0 table #5: started
-2026/08/20-22:04:56.161 a2c4 Current memtable full; waiting...
-2026/08/20-22:04:56.206 7b50 Level-0 table #5: 3067149 bytes OK
-2026/08/20-22:04:56.209 7b50 Delete type=0 #3
-2026/08/20-22:04:56.216 7b50 Level-0 table #7: started
-2026/08/20-22:04:56.272 7b50 Level-0 table #7: 2951735 bytes OK
-2026/08/20-22:04:56.274 7b50 Delete type=0 #4
-2026/08/20-22:04:56.310 7b50 Level-0 table #9: started
-2026/08/20-22:04:56.372 7b50 Level-0 table #9: 2982066 bytes OK
-2026/08/20-22:04:56.373 7b50 Delete type=0 #6
-2026/08/20-22:04:56.428 7b50 Level-0 table #11: started
-2026/08/20-22:04:56.498 7b50 Level-0 table #11: 2993664 bytes OK
-2026/08/20-22:04:56.499 7b50 Delete type=0 #8
-2026/08/20-22:04:56.520 7b50 Level-0 table #13: started
-2026/08/20-22:04:56.582 7b50 Level-0 table #13: 3028916 bytes OK
-2026/08/20-22:04:56.582 7b50 Delete type=0 #10
-2026/08/20-22:04:56.661 7b50 Level-0 table #15: started
-2026/08/20-22:04:56.722 7b50 Level-0 table #15: 3037875 bytes OK
-2026/08/20-22:04:56.722 7b50 Delete type=0 #12
-2026/08/20-22:04:56.747 7b50 Level-0 table #17: started
-2026/08/20-22:04:56.830 2568 Current memtable full; waiting...
-2026/08/20-22:04:56.835 7b50 Level-0 table #17: 3050358 bytes OK
-2026/08/20-22:04:56.837 7b50 Delete type=0 #14
-2026/08/20-22:04:56.845 7b50 Level-0 table #19: started
-2026/08/20-22:04:56.910 7b50 Level-0 table #19: 3036880 bytes OK
-2026/08/20-22:04:56.911 7b50 Delete type=0 #16
-2026/08/20-22:04:56.935 7b50 Level-0 table #21: started
-2026/08/20-22:04:56.999 7b50 Level-0 table #21: 2959407 bytes OK
-2026/08/20-22:04:57.000 7b50 Delete type=0 #18
-2026/08/20-22:04:57.027 7b50 Level-0 table #23: started
-2026/08/20-22:04:57.085 7b50 Level-0 table #23: 3019702 bytes OK
-2026/08/20-22:04:57.086 7b50 Delete type=0 #20
-2026/08/20-22:04:57.118 7b50 Level-0 table #25: started
-2026/08/20-22:04:57.169 3bd0 Current memtable full; waiting...
-2026/08/20-22:04:57.186 7b50 Level-0 table #25: 3016462 bytes OK
-2026/08/20-22:04:57.187 7b50 Delete type=0 #22
-2026/08/20-22:04:57.194 7b50 Level-0 table #27: started
-2026/08/20-22:04:57.255 7b50 Level-0 table #27: 2946144 bytes OK
-2026/08/20-22:04:57.256 7b50 Delete type=0 #24
-2026/08/20-22:04:57.305 7b50 Level-0 table #29: started
-2026/08/20-22:04:57.364 7b50 Level-0 table #29: 3030670 bytes OK
-2026/08/20-22:04:57.365 7b50 Delete type=0 #26
-2026/08/20-22:04:57.422 7b50 Level-0 table #31: started
-2026/08/20-22:04:57.482 7b50 Level-0 table #31: 3036207 bytes OK
-2026/08/20-22:04:57.484 7b50 Delete type=0 #28
-2026/08/20-22:04:57.549 7b50 Level-0 table #33: started
-2026/08/20-22:04:57.610 7b50 Level-0 table #33: 2991762 bytes OK
-2026/08/20-22:04:57.610 7b50 Delete type=0 #30
-2026/08/20-22:04:57.642 7b50 Level-0 table #35: started
-2026/08/20-22:04:57.706 7b50 Level-0 table #35: 3082619 bytes OK
-2026/08/20-22:04:57.708 7b50 Delete type=0 #32
-2026/08/20-22:04:57.785 7b50 Level-0 table #37: started
-2026/08/20-22:04:57.844 7b50 Level-0 table #37: 3032465 bytes OK
-2026/08/20-22:04:57.845 7b50 Delete type=0 #34
-2026/08/20-22:04:57.885 7b50 Level-0 table #39: started
-2026/08/20-22:04:57.918 7b50 Level-0 table #39: 3016948 bytes OK
-2026/08/20-22:04:57.919 7b50 Delete type=0 #36
-2026/08/20-22:04:58.010 7b50 Level-0 table #41: started
-2026/08/20-22:04:58.074 7b50 Level-0 table #41: 2943792 bytes OK
-2026/08/20-22:04:58.075 7b50 Delete type=0 #38
-2026/08/20-22:04:58.111 7b50 Level-0 table #43: started
-2026/08/20-22:04:58.180 7b50 Level-0 table #43: 3062591 bytes OK
-2026/08/20-22:04:58.180 7b50 Delete type=0 #40
-2026/08/20-22:04:58.217 7b50 Level-0 table #45: started
-2026/08/20-22:04:58.274 2568 Current memtable full; waiting...
-2026/08/20-22:04:58.287 7b50 Level-0 table #45: 2995197 bytes OK
-2026/08/20-22:04:58.288 7b50 Delete type=0 #42
-2026/08/20-22:04:58.300 7b50 Level-0 table #47: started
-2026/08/20-22:04:58.372 7b50 Level-0 table #47: 2946656 bytes OK
+2026/08/20-22:33:54.530 e58 Delete type=3 #1
+2026/08/20-22:33:54.842 fd4 Level-0 table #5: started
+2026/08/20-22:33:54.915 fd4 Level-0 table #5: 3068539 bytes OK
+2026/08/20-22:33:54.917 fd4 Delete type=0 #3
+2026/08/20-22:33:54.954 fd4 Level-0 table #7: started
+2026/08/20-22:33:55.012 fd4 Level-0 table #7: 2958145 bytes OK
+2026/08/20-22:33:55.014 fd4 Delete type=0 #4
+2026/08/20-22:33:55.069 fd4 Level-0 table #9: started
+2026/08/20-22:33:55.128 fd4 Level-0 table #9: 2990909 bytes OK
+2026/08/20-22:33:55.129 fd4 Delete type=0 #6
+2026/08/20-22:33:55.189 fd4 Level-0 table #11: started
+2026/08/20-22:33:55.256 fd4 Level-0 table #11: 3000084 bytes OK
+2026/08/20-22:33:55.258 fd4 Delete type=0 #8
+2026/08/20-22:33:55.304 fd4 Level-0 table #13: started
+2026/08/20-22:33:55.370 fd4 Level-0 table #13: 3034349 bytes OK
+2026/08/20-22:33:55.371 fd4 Delete type=0 #10
+2026/08/20-22:33:55.443 fd4 Level-0 table #15: started
+2026/08/20-22:33:55.506 fd4 Level-0 table #15: 3046695 bytes OK
+2026/08/20-22:33:55.507 fd4 Delete type=0 #12
+2026/08/20-22:33:55.553 fd4 Level-0 table #17: started
+2026/08/20-22:33:55.626 fd4 Level-0 table #17: 3058184 bytes OK
+2026/08/20-22:33:55.628 fd4 Delete type=0 #14
+2026/08/20-22:33:55.670 fd4 Level-0 table #19: started
+2026/08/20-22:33:55.733 fd4 Level-0 table #19: 3042126 bytes OK
+2026/08/20-22:33:55.735 fd4 Delete type=0 #16
+2026/08/20-22:33:55.786 fd4 Level-0 table #21: started
+2026/08/20-22:33:55.844 fd4 Level-0 table #21: 2968269 bytes OK
+2026/08/20-22:33:55.845 fd4 Delete type=0 #18
+2026/08/20-22:33:55.907 fd4 Level-0 table #23: started
+2026/08/20-22:33:55.964 fd4 Level-0 table #23: 3025199 bytes OK
+2026/08/20-22:33:55.965 fd4 Delete type=0 #20
+2026/08/20-22:33:56.015 fd4 Level-0 table #25: started
+2026/08/20-22:33:56.077 fd4 Level-0 table #25: 3025327 bytes OK
+2026/08/20-22:33:56.079 fd4 Delete type=0 #22
+2026/08/20-22:33:56.117 fd4 Level-0 table #27: started
+2026/08/20-22:33:56.176 fd4 Level-0 table #27: 2952453 bytes OK
+2026/08/20-22:33:56.177 fd4 Delete type=0 #24
+2026/08/20-22:33:56.219 fd4 Level-0 table #29: started
+2026/08/20-22:33:56.272 fd4 Level-0 table #29: 3037079 bytes OK
+2026/08/20-22:33:56.272 fd4 Delete type=0 #26
+2026/08/20-22:33:56.317 fd4 Level-0 table #31: started
+2026/08/20-22:33:56.367 fd4 Level-0 table #31: 3041407 bytes OK
+2026/08/20-22:33:56.369 fd4 Delete type=0 #28
+2026/08/20-22:33:56.421 fd4 Level-0 table #33: started
+2026/08/20-22:33:56.475 fd4 Level-0 table #33: 2995468 bytes OK
+2026/08/20-22:33:56.476 fd4 Delete type=0 #30
+2026/08/20-22:33:56.521 fd4 Level-0 table #35: started
+2026/08/20-22:33:56.586 fd4 Level-0 table #35: 3088823 bytes OK
+2026/08/20-22:33:56.587 fd4 Delete type=0 #32
+2026/08/20-22:33:56.596 fd4 Level-0 table #37: started
+2026/08/20-22:33:56.649 fd4 Level-0 table #37: 3037581 bytes OK
+2026/08/20-22:33:56.650 fd4 Delete type=0 #34
+2026/08/20-22:33:56.701 fd4 Level-0 table #39: started
+2026/08/20-22:33:56.724 fd4 Level-0 table #39: 3022446 bytes OK
+2026/08/20-22:33:56.725 fd4 Delete type=0 #36
+2026/08/20-22:33:56.804 fd4 Level-0 table #41: started
+2026/08/20-22:33:56.866 fd4 Level-0 table #41: 2948172 bytes OK
+2026/08/20-22:33:56.867 fd4 Delete type=0 #38
+2026/08/20-22:33:56.914 fd4 Level-0 table #43: started
+2026/08/20-22:33:56.979 9710 Current memtable full; waiting...
+2026/08/20-22:33:56.981 fd4 Level-0 table #43: 3069356 bytes OK
+2026/08/20-22:33:56.981 fd4 Delete type=0 #40
+2026/08/20-22:33:56.992 fd4 Level-0 table #45: started
+2026/08/20-22:33:57.036 9710 Current memtable full; waiting...
+2026/08/20-22:33:57.054 fd4 Level-0 table #45: 3003901 bytes OK
+2026/08/20-22:33:57.055 fd4 Delete type=0 #42
+2026/08/20-22:33:57.068 fd4 Level-0 table #47: started
+2026/08/20-22:33:57.131 fd4 Level-0 table #47: 2953243 bytes OK

@@ -38,7 +38,7 @@ function insideRoot(path) {
 const manifestPath = join(root, "system.json");
 if (!await exists(manifestPath)) throw new Error(`system.json ausente em ${root}`);
 const system = JSON.parse(await readFile(manifestPath, "utf8"));
-if (system.id !== "tagmar_rpg") errors.push(`ID inesperado: ${system.id}`);
+if (system.id !== "tagmar3er_oficial") errors.push(`ID inesperado: ${system.id}`);
 if (String(system.compatibility?.minimum) !== "14") errors.push("Compatibilidade mínima não está em V14");
 if (!String(system.compatibility?.verified ?? "").startsWith("14")) errors.push("Versão verificada não está em V14");
 if (!/^https:\/\/raw\.githubusercontent\.com\/[\w.-]+\/[\w.-]+\/(?:refs\/heads\/)?[\w./-]+\/system\.json$/i.test(String(system.manifest ?? ""))

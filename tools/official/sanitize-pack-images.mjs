@@ -10,9 +10,9 @@ const { ClassicLevel } = require(`${foundryModules}/classic-level`);
 const packArgument = process.argv.find(argument => argument.startsWith("--pack="))?.slice(7);
 if (!packArgument) throw new Error("Informe --pack=<caminho-do-banco>.");
 const packPath = resolve(packArgument);
-const forbiddenExact = /^(?:systems\/tagmar_rpg\/|https?:\/\/).+\.(?:png|jpe?g|webp|gif|svg|avif|webm|mp4|wav|mp3|ogg|cur)(?:\?.*)?$/i;
-const forbiddenEmbedded = /(?:systems\/tagmar_rpg\/[^"'<>]+?|https?:\/\/[^\s"'<>]+?)\.(?:png|jpe?g|webp|gif|svg|avif|webm|mp4|wav|mp3|ogg|cur)(?:\?[^\s"'<>]*)?/gi;
-const forbiddenImageTag = /<img\b[^>]*(?:systems\/tagmar_rpg\/|https?:\/\/)[^>]*>/gi;
+const forbiddenExact = /^(?:systems\/tagmar3er_oficial\/|https?:\/\/).+\.(?:png|jpe?g|webp|gif|svg|avif|webm|mp4|wav|mp3|ogg|cur)(?:\?.*)?$/i;
+const forbiddenEmbedded = /(?:systems\/tagmar3er_oficial\/[^"'<>]+?|https?:\/\/[^\s"'<>]+?)\.(?:png|jpe?g|webp|gif|svg|avif|webm|mp4|wav|mp3|ogg|cur)(?:\?[^\s"'<>]*)?/gi;
+const forbiddenImageTag = /<img\b[^>]*(?:systems\/tagmar3er_oficial\/|https?:\/\/)[^>]*>/gi;
 
 function normalize(value) {
   return String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");

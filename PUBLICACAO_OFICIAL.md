@@ -4,7 +4,7 @@ Este arquivo acompanha a preparação do **Tagmar 3ER Oficial** para distribuiç
 
 ## Identidade e autoria
 
-- [x] Identificador técnico preservado como `tagmar_rpg` para compatibilidade.
+- [x] Identificador próprio `tagmar3er_oficial`, permitindo instalação paralela ao sistema original.
 - [x] Marcos Walker e Vinicius Fernandez identificados como autores do sistema original.
 - [x] Escopo da atualização e dos compêndios sincronizados descrito sem atribuir indevidamente a autoria original.
 - [x] Identidade e documentação limitadas ao escopo desta edição oficial.

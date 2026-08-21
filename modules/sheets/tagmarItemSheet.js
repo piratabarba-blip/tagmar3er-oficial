@@ -13,7 +13,7 @@ export default class tagmarItemSheet extends foundry.appv1.sheets.ItemSheet {
     }
 
     get template() {
-        let layout = game.settings.get("tagmar_rpg", "sheetTemplate");
+        let layout = game.settings.get("tagmar3er_oficial", "sheetTemplate");
         if (this.object.type == "Efeito") {
             this['options']['height'] = 350;
             this['position']['height'] = 350;
@@ -37,9 +37,9 @@ export default class tagmarItemSheet extends foundry.appv1.sheets.ItemSheet {
             this['position']['height'] = 605;
         }
         if (layout != "base") {
-            return 'systems/tagmar_rpg/templates/sheets/'+ this.object.type.toLowerCase() +'-ficha.hbs';
+            return 'systems/tagmar3er_oficial/templates/sheets/'+ this.object.type.toLowerCase() +'-ficha.hbs';
         } else {
-            return 'systems/tagmar_rpg/templates/sheets/'+ this.object.type.toLowerCase() +'-sheet.hbs';
+            return 'systems/tagmar3er_oficial/templates/sheets/'+ this.object.type.toLowerCase() +'-sheet.hbs';
         }
     }
 
