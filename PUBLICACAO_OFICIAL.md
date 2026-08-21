@@ -22,7 +22,8 @@ Este arquivo acompanha a preparação do **Tagmar 3ER Oficial** para distribuiç
 - [x] Compêndios antigos e desatualizados excluídos do manifesto oficial.
 - [x] Validar todos os bancos LevelDB e suas referências.
 - [x] Confirmar que nenhum arquivo usado pelo sistema está ausente.
-- [ ] Testar uma instalação limpa no Foundry VTT 14.
+- [x] Testar uma instalação limpa no Foundry VTT 14 (Build 367).
+- [x] Confirmar a criação e abertura de um mundo isolado com os módulos obrigatórios e os nove compêndios.
 - [ ] Testar criação de personagem, criaturas, combate, itens e calendário.
 - [ ] Gerar ZIP contendo `system.json` na raiz.
 - [ ] Publicar manifesto e ZIP em uma versão do GitHub Releases.
