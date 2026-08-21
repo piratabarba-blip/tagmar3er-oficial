@@ -1,0 +1,244 @@
+.form_tagmar input[type="text"] {
+    font-family: Georgia, "Times New Roman", serif;
+}
+.form_tagmar input[type="number"] {
+    font-family: Georgia, "Times New Roman", serif;
+}
+.form_tagmar option {
+    font-family: Georgia, "Times New Roman", serif;
+}
+.form_tagmar select {
+    font-family: Georgia, "Times New Roman", serif;
+}
+.form_tagmar input[name="name"] {
+    font-family: Georgia, "Times New Roman", serif;
+}
+.form_tagmar table {
+    margin-bottom: 1px !important;
+    margin-top: 1px !important;
+}
+.form_tagmar a:hover{
+    cursor: pointer;
+}
+.form_tagmar button:hover{
+    cursor: pointer;
+}
+#chat-controls label:hover {
+    cursor: pointer;
+}
+.mid-cursor:hover {
+    cursor: pointer;
+}
+.form_tagmar input:read-only {
+    border-width: 0;
+    background-color: rgba(0,0,0,0);
+}
+.form_tagmar .editor {
+    padding: 0 8px;
+    height: 100%;
+    min-height: 200px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.form_tagmar .editor span {
+    font-family: Georgia, "Times New Roman", serif !important;
+}
+.form_tagmar .editor strong {
+    color:rgb(94, 8, 8);
+}
+.form_tagmar .editor b {
+    color:rgb(94, 8, 8);
+}
+.form_tagmar nav label{
+    width: 100% !important;
+
+}
+.fairyDust{
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 205%;
+    font-weight: bolder;
+}
+.mediaeval {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 95%;
+}
+.dados {
+    padding: 2px 0;
+}
+.container_dados {
+    border: 2px solid #6b4d22;
+    border-radius: 4px;
+}
+.cont-dir {
+    margin: 5px 0;
+}
+.dados-dir {
+    border: 2px groove black;
+    margin-left: 5px;
+    padding: 5px 5px;
+}
+.itemImg {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.rollable:hover,
+.rollable:focus {
+    color: #000;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+.creditos:hover,
+.creditos:focus {
+    color: rgb(94, 8, 8);
+    text-shadow: 0 0 10px black;
+}
+.creditos {
+    color: gray;
+    font-size: 90%;
+}
+.armaImg:hover,
+.armaImg:focus {
+    cursor: pointer;
+}
+.hiddenT {
+    visibility: hidden;
+}
+.hide {
+    color: transparent !important;
+}
+.esconde {
+    display: none !important;
+}
+.imgItem {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.tagmarLogo {
+    border-style: none; 
+    padding-top:2px; 
+}
+.tagmarLogoText {
+    display: inline-block;
+    padding: 12px 4px 4px;
+    color: #6f4d16;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.rola {
+    font-size: 150%;
+}
+.rola_desc {
+    font-size: 100%;
+}
+.rola_desc_combate,
+.rola_desc_combate p {
+    font-size: 115% !important;
+}
+.rola_desc b {
+    color:rgb(94, 8, 8);
+    font-size: 105%;
+}
+.rola_desc strong {
+    color:rgb(94, 8, 8);
+}
+.Negrito {
+    color:rgb(94, 8, 8);
+    font-size: 120%;
+    font-weight: bolder;
+}
+.rola_desc u {
+    color:rgb(94, 8, 8);
+    font-size: 105%;
+}
+.rola_dano {
+    animation: blinking 1s 3;  /* IE 10+, Fx 29+ */
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.aplicarDano {
+    margin-bottom: 5px;
+}
+
+/* Foundry V13: impede que a classe .col do Bootstrap desloque a coluna
+   direita do HUD para baixo do token. */
+#token-hud .col.left {
+    position: absolute;
+    top: -50px;
+    left: calc(-1 * var(--column-width) - 8px);
+    right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    width: var(--column-width);
+    height: calc(100% + 100px);
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+#token-hud .col.right {
+    position: absolute;
+    top: -50px;
+    right: calc(-1 * var(--column-width) - 8px);
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    width: var(--column-width);
+    height: calc(100% + 100px);
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+@keyframes blinking {
+0%, 49% {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+50%, 100% {
+    background-color: #ffffff;
+    color: black;
+}
+}
+.item-copy {
+    margin-right: 2px;
+}
+.borda-m .container_dados {
+    border-color: #403a55;
+}
+.bg-img,
+.bg-img-anao,
+.bg-img-barda,
+.bg-img-bardo,
+.bg-img-gana,
+.bg-img-ghuma,
+.bg-img-ghumk,
+.bg-img-lhuma,
+.bg-img-lpeqa,
+.bg-img-lpeq,
+.bg-img-lhum,
+.bg-img-melfa,
+.bg-img-mhuma,
+.bg-img-melfo,
+.bg-img-pap,
+.bg-img-relf,
+.bg-img-rhuma,
+.bg-img-shum,
+.bg-img-shumv,
+.bg-img-selfa,
+.bg-img-shum1,
+.bg-img-shum2,
+.bg-img-items {
+    background: linear-gradient(145deg, #e8dfca, #cdbf9f);
+    color: #2b2117;
+}

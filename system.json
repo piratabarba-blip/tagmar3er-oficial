@@ -1,0 +1,190 @@
+{
+  "id": "tagmar_rpg",
+  "title": "Tagmar 3ER Oficial",
+  "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
+  "version": "2.7.0-v14.1-official.1",
+  "relationships": {
+    "requires": [
+      {
+        "id": "barbrawl",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/barbrawl/module.json"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/lib-wrapper/module.json"
+      },
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/dice-so-nice/module.json"
+      },
+      {
+        "id": "socketlib",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/socketlib/module.json"
+      },
+      {
+        "id": "polyglot",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/polyglot/module.json"
+      },
+      {
+        "id": "tagmar-ammu-nation",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-ammu-nation/module.json"
+      },
+      {
+        "id": "tagmartrade",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmartrade/module.json"
+      },
+      {
+        "id": "tagmar-calendario",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-calendario/module.json"
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Marcos Walker",
+      "url": "https://github.com/marcoswalker"
+    },
+    {
+      "name": "Vinicius Fernandez",
+      "url": "https://www.youtube.com/channel/UCDyR_0eg3TjV5r5cOUqQaSQ"
+    }
+  ],
+  "media": [
+    {
+      "type": "video",
+      "url": "https://youtu.be/N2yr3L2m2ac?list=PLrRhUsW5zVjALqHoqfyaDXoRv2ku6Wxei"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.367",
+    "maximum": "14"
+  },
+  "scripts": [
+  ],
+  "esmodules": [
+    "modules/tagmar.js"
+  ],
+  "styles": [
+    "css/bootstrap-grid.css",
+    "css/sheet.css"
+  ],
+  "packs": [
+    {
+      "name": "criando-fichas-t3er",
+      "label": "Tagmar — Criação de Fichas (Edição Sincronizada)",
+      "system": "tagmar_rpg",
+      "path": "packs/criando-fichas-t3er",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "reino-de-tagmar-t3er",
+      "label": "Reino de Tagmar — Referências Oficiais (Edição Sincronizada)",
+      "system": "tagmar_rpg",
+      "path": "packs/reino-de-tagmar-t3er",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "objetos-magicos-t3er",
+      "label": "Objetos Mágicos — Itens Oficiais (Edição Sincronizada)",
+      "system": "tagmar_rpg",
+      "path": "packs/objetos-magicos-t3er",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "objetos-magicos-regras-t3er",
+      "label": "Objetos Mágicos — Guia e Regras (Edição Sincronizada)",
+      "system": "tagmar_rpg",
+      "path": "packs/objetos-magicos-regras-t3er",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "o-imperio-t3er",
+      "label": "O Império — Referências Oficiais (Edição Sincronizada)",
+      "system": "tagmar_rpg",
+      "path": "packs/o-imperio-t3er",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "criaturas-t3er",
+      "label": "Criaturas de Tagmar — Edição Oficial Sincronizada",
+      "system": "tagmar_rpg",
+      "path": "packs/criaturas-t3er",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "registro-de-datas",
+      "label": "Registro de Datas",
+      "system": "tagmar_rpg",
+      "path": "packs/registro-de-datas",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "NONE",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "terras-selvagens-t3er",
+      "label": "Terras Selvagens — Criação de Fichas (Edição Sincronizada)",
+      "system": "tagmar_rpg",
+      "path": "packs/terras-selvagens-t3er",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
+      "name": "terras-selvagens-regras-t3er",
+      "label": "Terras Selvagens — Regras (Edição Sincronizada)",
+      "system": "tagmar_rpg",
+      "path": "packs/terras-selvagens-regras-t3er",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    }
+  ],
+  "languages": [
+  ],
+  "grid": {
+    "distance": 1.0,
+    "units": "m"
+  },
+  "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
+  "manifest": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/latest/download/system.json",
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.1/tagmar3er-oficial.zip"
+}
