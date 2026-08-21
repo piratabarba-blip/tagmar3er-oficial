@@ -2,7 +2,7 @@
   "id": "tagmar3er_oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.6",
+  "version": "2.7.0-v14.1-official.7",
   "relationships": {
     "requires": [
       {
@@ -77,7 +77,8 @@
     "css/bootstrap-grid.css",
     "css/sheet.css",
     "css/modern-dialogs.css",
-    "css/dark-sheet.css"
+    "css/dark-sheet.css",
+    "css/foundry-sheet.css"
   ],
   "packs": [
     {
@@ -188,5 +189,5 @@
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
   "manifest": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/latest/download/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.6/tagmar3er-oficial.zip"
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.7/tagmar3er-oficial.zip"
 }
