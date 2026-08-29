@@ -6,6 +6,8 @@
 export const preloadHandlebarsTemplates = async function() {
 	return foundry.applications.handlebars.loadTemplates([
 
+        "systems/tagmar3er_oficial/templates/apps/tesouros-tagmar.hbs",
+
         "systems/tagmar3er_oficial/templates/sheets/personagem-sheet.hbs",
         "systems/tagmar3er_oficial/templates/sheets/npc-sheet.hbs",
         "systems/tagmar3er_oficial/templates/sheets/inventario-sheet.hbs",
