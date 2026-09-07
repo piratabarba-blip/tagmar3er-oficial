@@ -242,3 +242,19 @@
     background: linear-gradient(145deg, #e8dfca, #cdbf9f);
     color: #2b2117;
 }
+.efeito-atributo-valor {
+  font-weight: 700;
+  text-align: center;
+}
+
+.efeito-atributo-positivo {
+  color: #2e9d52 !important;
+}
+
+.efeito-atributo-negativo {
+  color: #d9534f !important;
+}
+
+.efeito-atributo-neutro {
+  opacity: 0.72;
+}
