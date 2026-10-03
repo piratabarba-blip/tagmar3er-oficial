@@ -1,5 +1,5 @@
 /**
- * Light Sources chat translation regression, without a server or world writes.
+ * Full Light Sources translation regression, without a server or world writes.
  * TAGMAR_TEST_FOUNDRY_PUBLIC: installed Foundry public directory.
  * TAGMAR_TEST_LIGHT_SOURCES: unmodified Light Sources module directory.
  * Usage: node tools/test-light-sources-chat.mjs [system-directory]
@@ -22,13 +22,19 @@ const language = manifest.languages.find(l => l.lang === "pt-BR" && l.module ===
 assert.ok(language, "Translation must be gated on the optional module");
 const pt = await json(path.join(root, language.path));
 assert.deepEqual(Object.keys(pt), ["LIGHTSOURCES"]);
-assert.deepEqual(Object.keys(pt.LIGHTSOURCES), ["Chat"]);
-assert.deepEqual(Object.keys(pt.LIGHTSOURCES.Chat).sort(), Object.keys(en.LIGHTSOURCES.Chat).sort());
+function flatten(object, prefix = "") {
+    return Object.fromEntries(Object.entries(object).flatMap(([key, value]) =>
+        typeof value === "object" ? Object.entries(flatten(value, prefix + key + ".")) : [[prefix + key, value]]));
+}
+const translated = flatten(pt);
+const originalStrings = flatten(en);
+assert.deepEqual(Object.keys(translated).sort(), Object.keys(originalStrings).sort(), "All module texts must be translated");
 const variables = text => [...text.matchAll(/\{([^}]+)\}/g)].map(m => m[1]).sort();
-for (const [key, text] of Object.entries(pt.LIGHTSOURCES.Chat)) {
+for (const [key, text] of Object.entries(translated)) {
     assert.equal(typeof text, "string");
     assert.ok(text.trim());
-    assert.deepEqual(variables(text), variables(en.LIGHTSOURCES.Chat[key]), key);
+    assert.deepEqual(variables(text), variables(originalStrings[key]), key);
+    assert.deepEqual(text.match(/<\/?[^>]+>/g) ?? [], originalStrings[key].match(/<\/?[^>]+>/g) ?? [], key + ": HTML");
 }
 
 const core = await readFile(path.join(publicRoot, "scripts/foundry.mjs"), "utf8");
@@ -78,9 +84,15 @@ assert.equal(body, "A fonte de luz “Tochas”, carregada por Donovan Hell, se 
 assert.equal(i18n.format("LIGHTSOURCES.Chat.LitPattern", {item: "Tochas", actor: "Donovan Hell", pattern: "Luz forte"}),
     "Donovan Hell acende a fonte de luz “Tochas” (Luz forte).");
 assert.equal(i18n.localize("LIGHTSOURCES.Chat.Unknown"), "LIGHTSOURCES.Chat.Unknown");
-// Untranslated controls keep the module's English fallback.
-const hudKey = Object.keys(en.LIGHTSOURCES.Hud)[0];
-assert.equal(i18n.localize("LIGHTSOURCES.Hud." + hudKey), en.LIGHTSOURCES.Hud[hudKey]);
+for (const [key, text] of Object.entries(translated)) assert.equal(i18n.localize(key), text, key);
+assert.equal(i18n.localize("LIGHTSOURCES.Settings.Menu.Label"), "Configurar Fontes de Luz");
+assert.equal(i18n.localize("LIGHTSOURCES.LightEditor.Fields.ConsumeModes.copy"), "Uma unidade do item");
+assert.ok(i18n.localize("LIGHTSOURCES.LightEditor.Fields.PreviewHint").includes("PRÉVIA"));
+assert.ok(i18n.localize("LIGHTSOURCES.Compat.QuantityHint").includes("system.quant"));
+// Future untranslated keys retain the module's fallback; this changes only the test fixture.
+files.get("modules/light-sources/languages/en.json").LIGHTSOURCES.FutureTestKey = "English fallback";
+await i18n.setLanguage("pt-BR");
+assert.equal(i18n.localize("LIGHTSOURCES.FutureTestKey"), "English fallback");
 
 // Use the installed module's unchanged card builder to verify the new text and styling.
 const helpers = await readFile(path.join(moduleRoot, "scripts/helpers.js"), "utf8");
@@ -91,12 +103,10 @@ const functions = ["buildLightMessage", "buildChatCard"].map(name => {
 }).join("\n");
 vm.runInContext('const CHAT_CARD_ACCENT = "#ff9838"; const CHAT_CARD_BG = "modules/light-sources/assets/banner.webp";\n'
     + functions + "\nglobalThis.makeCard = buildLightMessage;", context);
-const oldContent = "<h3>Light Burns Out</h3>";
 const message = context.makeCard({name: "Donovan Hell"}, i18n.localize("LIGHTSOURCES.Chat.ExpiredTitle"), body);
 assert.ok(message.content.includes("A luz se apagou") && message.content.includes(body));
 assert.ok(message.content.includes("#ff9838") && message.content.includes("text-transform: uppercase"));
 assert.equal(message.speaker.alias, "Donovan Hell");
-assert.equal(oldContent, "<h3>Light Burns Out</h3>");
 
 for (const lang of ["en", "it"]) {
     const original = files.get("modules/light-sources/languages/" + lang + ".json");
@@ -110,4 +120,4 @@ const disabled = new context.Localization("pt-BR.core");
 await disabled.setLanguage("pt-BR");
 assert.equal(loaded.length, 0, "Do not load module-specific translation when Light Sources is inactive");
 assert.equal(disabled.localize("LIGHTSOURCES.Chat.ExpiredTitle"), "LIGHTSOURCES.Chat.ExpiredTitle");
-console.log("PASS " + manifest.id + ": 12 chat keys, placeholders, native localization, card styling, fallback, other languages and inactive module");
+console.log("PASS " + manifest.id + ": " + Object.keys(translated).length + " translated strings, placeholders, HTML, native localization, card styling, fallback, other languages and inactive module");

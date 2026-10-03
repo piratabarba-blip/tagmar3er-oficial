@@ -17,60 +17,60 @@ export default class tagmarActorSheet extends foundry.appv1.sheets.ActorSheet {
         });
     }
     get template() {
-        let layout = game.settings.get("tagmar3er_oficial", "sheetTemplate");
+        let layout = game.settings.get("tagmar3er-oficial", "sheetTemplate");
         if (this.document.type == "Personagem" && !["base", "dark", "foundry"].includes(layout)) {
             if (layout == 'tagmar3anao') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-anao.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-anao.hbs';
             } else if (layout == 'tagmar3barda') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-barda.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-barda.hbs';
             } else if (layout == 'tagmar3bardo') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-bardo.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-bardo.hbs';
             } else if (layout == 'tagmar3gana') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-gana.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-gana.hbs';
             } else if (layout == 'tagmar3ghuma') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-ghuma.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-ghuma.hbs';
             } else if (layout == 'tagmar3ghumk') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-ghumk.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-ghumk.hbs';
             } else if (layout == 'tagmar3lhuma') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-lhuma.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-lhuma.hbs';
             } else if (layout == 'tagmar3lpeqa') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-lpeqa.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-lpeqa.hbs';
             } else if (layout == 'tagmar3lpeq') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-lpeq.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-lpeq.hbs';
             } else if (layout == 'tagmar3lhum') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-lhum.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-lhum.hbs';
             } else if (layout == 'tagmar3melfa') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-melfa.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-melfa.hbs';
             } else if (layout == 'tagmar3mhuma') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-mhuma.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-mhuma.hbs';
             } else if (layout == 'tagmar3melfo') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-melfo.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-melfo.hbs';
             } else if (layout == 'tagmar3pap') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-pap.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-pap.hbs';
             } else if (layout == 'tagmar3relf') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-relf.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-relf.hbs';
             } else if (layout == 'tagmar3rhuma') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-rhuma.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-rhuma.hbs';
             } else if (layout == 'tagmar3shum') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-shum.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-shum.hbs';
             } else if (layout == 'tagmar3shumv') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-shumv.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-shumv.hbs';
             } else if (layout == 'tagmar3selfa') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-selfa.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-selfa.hbs';
             } else if (layout == 'tagmar3shum1') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-shum1.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-shum1.hbs';
             } else if (layout == 'tagmar3shum2') {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha-shum2.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha-shum2.hbs';
             } else {
-                return 'systems/tagmar3er_oficial/templates/sheets/personagem-ficha.hbs';
+                return 'systems/tagmar3er-oficial/templates/sheets/personagem-ficha.hbs';
             }
             
         } else if (this.document.type == "NPC" && !["base", "dark", "foundry"].includes(layout)) {
-            return 'systems/tagmar3er_oficial/templates/sheets/npc-ficha.hbs';
+            return 'systems/tagmar3er-oficial/templates/sheets/npc-ficha.hbs';
         } else if (this.document.type == "Inventario" && !["base", "dark", "foundry"].includes(layout)) {
-            return 'systems/tagmar3er_oficial/templates/sheets/inventario-ficha.hbs';
+            return 'systems/tagmar3er-oficial/templates/sheets/inventario-ficha.hbs';
         } else {
-            return 'systems/tagmar3er_oficial/templates/sheets/'+ this.document.type.toLowerCase() +'-sheet.hbs';
+            return 'systems/tagmar3er-oficial/templates/sheets/'+ this.document.type.toLowerCase() +'-sheet.hbs';
         }
     }
     async getData(options) {
@@ -109,7 +109,7 @@ export default class tagmarActorSheet extends foundry.appv1.sheets.ActorSheet {
             if (data.document.items.filter(item => item.type == "Raca")[0]) {
                 actorUtils._preparaCaracRaciais(data, updatePers);
                 actorUtils._caracSort(data, updatePers);
-                if (!game.settings.get('tagmar3er_oficial', 'ajusteManual')) actorUtils._calculaAjuste(data, updatePers);
+                if (!game.settings.get('tagmar3er-oficial', 'ajusteManual')) actorUtils._calculaAjuste(data, updatePers);
                 actorUtils._prepareValorTeste(data, updatePers);
             }
             if (data.document.items.filter(item => item.type == "Profissao")[0]) {
@@ -166,8 +166,8 @@ export default class tagmarActorSheet extends foundry.appv1.sheets.ActorSheet {
     activateListeners(html) {
         super.activateListeners(html);
         activatePortraitListeners(this, html);
-        this.element.toggleClass("tagmar-dark-sheet", game.settings.get("tagmar3er_oficial", "sheetTemplate") === "dark");
-        this.element.toggleClass("tagmar-foundry-sheet", game.settings.get("tagmar3er_oficial", "sheetTemplate") === "foundry");
+        this.element.toggleClass("tagmar-dark-sheet", game.settings.get("tagmar3er-oficial", "sheetTemplate") === "dark");
+        this.element.toggleClass("tagmar-foundry-sheet", game.settings.get("tagmar3er-oficial", "sheetTemplate") === "foundry");
         if (this.document.type != "Inventario") {
             if (!this.options.editable) return;
         }

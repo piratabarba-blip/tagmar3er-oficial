@@ -1,5 +1,202 @@
 {
   "LIGHTSOURCES": {
+    "Settings": {
+      "Menu": {
+        "Name": "Fontes de Luz",
+        "Label": "Configurar Fontes de Luz",
+        "Hint": "Cadastre itens como fontes de luz e configure seus padrões de iluminação, consumo e duração. Apenas para o mestre."
+      },
+      "Compat": {
+        "Name": "Compatibilidade com o Sistema",
+        "Label": "Configurar Compatibilidade com o Sistema",
+        "Hint": "Escolha quais tipos de itens e atores do sistema detectado este módulo utiliza e onde a quantidade dos itens é armazenada. Apenas para o mestre."
+      },
+      "Transfer": {
+        "Name": "Importação e Exportação",
+        "Label": "Importar ou Exportar Fontes de Luz",
+        "Hint": "Salve as fontes de luz e as configurações de compatibilidade deste mundo em um arquivo JSON, ou carregue um arquivo criado em outro mundo. Apenas para o mestre."
+      },
+      "AllowFreeForAllDrop": {
+        "Name": "Permitir Deixar Luzes de Uso Livre no Chão",
+        "Hint": "Permite deixar no chão uma luz acesa de “Uso livre para todos”. Essas fontes não exigem um item; por isso, deixá-las no chão não custa nada e pode ser repetido sem limite. Desative para manter as luzes de uso livre apenas nos tokens. Fontes com “Pode ser deixada no chão” desativado nunca podem ser deixadas no chão, independentemente desta configuração."
+      },
+      "RestrictPlayerControl": {
+        "Name": "Restringir o Controle de Luzes ao Mestre",
+        "Hint": "Somente o mestre pode acender, apagar, deixar no chão ou recolher uma fonte de luz pelos controles do token. Os jogadores ainda veem o painel e o estado aceso/apagado, mas seus cliques nesses controles não são aceitos."
+      },
+      "AnnounceLit": {
+        "Name": "Anunciar Luzes no Chat",
+        "Hint": "Publica uma mensagem no chat sempre que uma fonte de luz é acesa. Não afeta os demais eventos de luz: deixar no chão, recolher ou apagar ao fim da duração."
+      }
+    },
+    "Config": {
+      "Title": "Fontes de Luz",
+      "DropHint": "Arraste aqui um item de um tipo habilitado para cadastrá-lo como fonte de luz.",
+      "AddByName": "Adicionar por Nome",
+      "AddByNameTitle": "Adicionar Fonte de Luz por Nome",
+      "NameLabel": "Nome",
+      "NamePlaceholder": "Nome da fonte de luz",
+      "Empty": "Nenhuma fonte de luz cadastrada.",
+      "OpenItem": "Abrir Item",
+      "SendToChat": "Enviar ao Chat",
+      "NoItemReference": "Nenhum item vinculado encontrado. Arraste esta fonte de luz novamente para habilitar esta ação.",
+      "Grant": "Uso Livre para Todos (Não Exige Item)",
+      "HudHidden": "Ocultar dos controles do token — a fonte só pode ser acesa pela API do módulo, por quem gerenciar seu custo. Ela continua aparecendo enquanto estiver acesa, para permitir apagá-la.",
+      "Edit": "Editar Padrão de Luz",
+      "Restore": "Restaurar Padrão do Módulo",
+      "RestoreTooltip": "Descarta suas alterações e restaura os valores cadastrados pelo módulo responsável por esta fonte. As atualizações automáticas serão retomadas.",
+      "RestoreDisabledTooltip": "Nada para restaurar — você não alterou esta fonte de luz desde que o módulo a cadastrou.",
+      "RestoreTitle": "Restaurar Padrão do Módulo",
+      "RestoreContent": "Descartar suas alterações em <strong>{name}</strong> e restaurar os padrões de luz, o consumo e a duração cadastrados pelo módulo?",
+      "Delete": "Remover Fonte de Luz",
+      "DeleteTitle": "Remover Fonte de Luz",
+      "DeleteContent": "Remover <strong>{name}</strong> das fontes de luz cadastradas?",
+      "InvalidType": "O tipo deste item não está habilitado como fonte de luz. Habilite-o primeiro em Compatibilidade com o Sistema.",
+      "Duplicate": "{name} já está cadastrado como fonte de luz.",
+      "Unlimited": "Sem limite",
+      "Minutes": "{minutes} min",
+      "Patterns": "{count} padrões",
+      "ConsumeCopy": "Consome uma unidade",
+      "ConsumeCharge": "Consome uma carga",
+      "FreeForAll": "Uso livre para todos",
+      "Coverable": "Pode ser coberta",
+      "Undroppable": "Não pode ser deixada no chão",
+      "ManagedByTooltip": "Cadastrada por um sistema ou módulo externo: {name}",
+      "NameOnlyBadge": "Sem item",
+      "NameOnlyTooltip": "Cadastrada apenas pelo nome — sem item vinculado.",
+      "RemovedHeading": "Fontes de luz de módulos removidas",
+      "RestoreRemovedTooltip": "Restaura esta fonte de luz com os valores cadastrados pelo módulo."
+    },
+    "Patterns": {
+      "Standard": "Padrão",
+      "New": "Novo Padrão",
+      "NamePlaceholder": "Nome do padrão",
+      "Add": "Adicionar Padrão",
+      "Remove": "Remover Padrão",
+      "Restore": "Restaurar este padrão para o valor original do módulo"
+    },
+    "Transfer": {
+      "Title": "Importar e Exportar Fontes de Luz",
+      "ExportHeading": "Exportação",
+      "ExportHint": "Salva em um arquivo JSON as fontes de luz deste mundo, suas alterações nas fontes fornecidas por módulos e as configurações de compatibilidade com o sistema. As fontes originais fornecidas por módulos não são incluídas: elas reaparecem em qualquer mundo onde o módulo correspondente esteja ativo.",
+      "Export": "Exportar para Arquivo",
+      "ImportHeading": "Importação",
+      "ImportHint": "Carrega um arquivo exportado de outro mundo. As fontes do arquivo substituem as fontes daqui que correspondem ao mesmo item; as demais são mantidas. As configurações de compatibilidade só são aplicadas quando o arquivo vem do mesmo sistema de jogo.",
+      "Import": "Importar de Arquivo",
+      "NoFile": "Escolha primeiro um arquivo para importar.",
+      "NotAnExport": "Este arquivo não é uma exportação do Light Sources.",
+      "ConfirmTitle": "Importar Fontes de Luz",
+      "Added": "Adiciona {count}: {names}.",
+      "Replaced": "Substitui {count}: {names}.",
+      "NoSources": "O arquivo não contém fontes de luz.",
+      "Invalid": "Ignora {count} entradas que não são fontes de luz válidas.",
+      "Unresolved": "Estas fontes se referem a um item que não existe neste mundo; por isso, só corresponderão a itens carregados com o mesmo nome e tipo: {names}.",
+      "CompatApplied": "Substitui as configurações de compatibilidade com o sistema pelas configurações do arquivo.",
+      "CompatOtherSystem": "Mantém as configurações de compatibilidade deste mundo: o arquivo vem de outro sistema de jogo.",
+      "ConfirmQuestion": "Importar?",
+      "Done": "Fontes de luz importadas."
+    },
+    "Compat": {
+      "Title": "Compatibilidade com o Sistema",
+      "SystemNote": "Sistema detectado: {system} ({id}). Habilite os tipos que este módulo deve tratar como fontes de luz e os atores que podem carregá-las.",
+      "Tabs": {
+        "items": "Tipos de Itens",
+        "actors": "Tipos de Atores",
+        "quantity": "Quantidade e Cargas"
+      },
+      "ItemsHint": "Habilite os tipos de itens que podem ser cadastrados como fontes de luz.",
+      "ActorsHint": "Habilite os tipos de atores que podem usar fontes de luz de uso livre pelos controles do token. Atores que carregam um item correspondente a uma fonte de luz sempre podem usá-lo, independentemente desta lista.",
+      "NoItemTypes": "O sistema ativo não define tipos de itens.",
+      "NoActorTypes": "O sistema ativo não define tipos de atores.",
+      "QuantityPath": "Caminho da Quantidade do Item",
+      "QuantityHint": "Caminho até a quantidade, a partir da raiz do item, com os campos separados por pontos (por exemplo: system.quantity; no Tagmar, system.quant). Fontes que consomem uma unidade usam esse campo para verificar a disponibilidade e descontar uma unidade ao acender. Deixe vazio se os itens do sistema não tiverem quantidade; nesse caso, essas fontes não reduzirão nenhuma contagem.",
+      "ChargesPath": "Caminho das Cargas do Item",
+      "ChargesHint": "Caminho até as cargas restantes, a partir da raiz do item, com os campos separados por pontos (por exemplo: system.uses.value). Fontes que consomem uma carga usam esse campo para verificar a disponibilidade e descontar uma carga ao acender, a menos que o caminho de cargas gastas esteja configurado abaixo. Deixe vazio se os itens do sistema não tiverem cargas.",
+      "ChargesSpentPath": "Caminho das Cargas Gastas",
+      "ChargesSpentHint": "Opcional. Para sistemas que armazenam as cargas usadas, em vez das restantes (por exemplo: system.uses.spent). Quando configurado, acender uma luz soma uma unidade aqui, em vez de subtrair do campo de cargas restantes, que continua sendo usado para a leitura.",
+      "Save": "Salvar"
+    },
+    "LightEditor": {
+      "Title": "Padrão de Luz: {name}",
+      "Tabs": {
+        "patterns": "Padrões",
+        "usage": "Consumo"
+      },
+      "Fields": {
+        "PatternsHint": "Cada padrão é uma forma de emitir esta luz — por exemplo, um feixe largo de curto alcance ou um feixe estreito de longo alcance. O padrão é escolhido nos controles do token. Todos os padrões compartilham o mesmo consumo e a mesma duração.",
+        "PreviewHint": "PRÉVIA: enquanto esta janela estiver aberta, selecionar um token aplica nele uma prévia da luz durante a edição, sem usar o botão de acender. Ao fechar esta janela, a iluminação original do token é restaurada automaticamente.",
+        "Dim": "Raio de Penumbra",
+        "Bright": "Raio de Luz Plena",
+        "Angle": "Ângulo de Emissão",
+        "Color": "Cor da Luz",
+        "Alpha": "Intensidade da Cor",
+        "Negative": "Fonte de Escuridão",
+        "NegativeHint": "Emite escuridão em vez de luz, escurecendo a área dentro de seus raios em vez de revelá-la. A escuridão tem seu próprio conjunto de animações; por isso, alterar esta opção limpa o tipo de animação escolhido abaixo.",
+        "AnimationType": "Tipo de Animação",
+        "AnimationNone": "Nenhuma",
+        "Speed": "Velocidade da Animação",
+        "Intensity": "Intensidade da Animação",
+        "Reverse": "Inverter Direção",
+        "Advanced": "Avançado",
+        "AdvancedEnabled": "Usar Opções Avançadas",
+        "AdvancedEnabledHint": "Desativado: o token mantém suas próprias opções avançadas de luz, e uma luz deixada no chão usa os padrões do Foundry. Ativado: este padrão define essas opções tanto na luz carregada quanto na luz deixada no chão. Indisponível para fontes de escuridão.",
+        "Ending": "Luz Enfraquecendo",
+        "EndingEnabled": "Usar Aparência de Luz Enfraquecendo",
+        "EndingEnabledHint": "Desativado: este padrão mantém a aparência acima até a luz se apagar. Ativado: nos últimos minutos, definidos em “Fase de Enfraquecimento” na aba Consumo, a luz passa a usar esta aparência — no token ou no chão, coberta ou não.",
+        "Consume": "Acender Consome",
+        "ConsumeModes": {
+          "none": "Nada",
+          "copy": "Uma unidade do item",
+          "charge": "Uma carga do item"
+        },
+        "ConsumeHint": "Define o que acender esta fonte retira do item. Nada: o próprio item é a fonte de luz, como uma lanterna ou uma lâmina luminosa. Uma unidade: o item representa várias luzes iguais, como cinco tochas; uma unidade é usada para criar a luz acesa e sai da quantidade disponível. Uma carga: o item é um objeto com usos, como uma tocha que pode ser acesa três vezes ou uma varinha com cargas; a luz fica vinculada a esse item, apaga quando ele deixa o ator e o acompanha quando outro módulo o coloca no mapa. Uma carga apagada antes de terminar guarda o tempo restante no item; ao acender novamente, esse tempo é usado primeiro, sem gastar outra carga. Apenas acender consome: trocar padrões, deixar no chão e recolher não consomem.",
+        "Coverable": "Pode Ser Coberta",
+        "CoverableHint": "Adiciona o controle Cobrir ao lado de Deixar no Chão, nos controles do token. Ele oculta a luz sem encerrá-la: ela para de iluminar, mas a duração continua sendo contada, e pode ser descoberta depois com o tempo restante. Destina-se a luzes mágicas em objetos, não a chamas — uma pedra iluminada por magia pode ser guardada no bolso sem apagar. Deixe desativado para tochas e lanternas.",
+        "Droppable": "Pode Ser Deixada no Chão",
+        "DroppableHint": "Oferece o controle Deixar no Chão enquanto a luz está acesa, colocando-a no mapa como uma Luz Ambiente. Desative para uma luz integrada ao equipamento vestido pelo personagem, como uma armadura luminosa ou uma lâmpada presa ao elmo: ela permanece no token e só sai junto com seu item quando outro módulo o retira. Luzes de uso livre também exigem a configuração “Permitir Deixar Luzes de Uso Livre no Chão”.",
+        "Duration": "Duração (minutos)",
+        "DurationHint": "Minutos até a luz se apagar sozinha, contados no modo escolhido abaixo. Use 0 para uma luz sem limite de duração, que só se apaga manualmente.",
+        "DurationPreset": "Duração Predefinida",
+        "EndingMinutes": "Fase de Enfraquecimento (minutos)",
+        "EndingMinutesHint": "Define em quantos dos últimos minutos de duração cada padrão exibe a aparência de luz enfraquecendo. Use 0 para desativar. Um valor igual ou superior à duração faz a luz usar essa aparência desde o momento em que é acesa.",
+        "DurationMode": "Contagem da Duração",
+        "DurationModeWorld": "Tempo de jogo (relógio do mundo)",
+        "DurationModeReal": "Tempo real (relógio real)",
+        "DurationModeHint": "Tempo de jogo: a duração diminui conforme o mestre avança o relógio do mundo; com o relógio parado, a luz continua acesa sem gastar tempo. Tempo real: a duração diminui em minutos reais, mesmo com o jogo pausado ou o dono desconectado.",
+        "RangePreset": "Alcance Predefinido",
+        "RangeCustom": "Personalizado"
+      },
+      "Save": "Salvar"
+    },
+    "Hud": {
+      "Tooltip": "Fontes de Luz",
+      "TooltipLit": "{item} — luz acesa",
+      "TooltipRemaining": "{item} — restam {minutes} min",
+      "TooltipStowed": "{item} — luz coberta",
+      "TooltipStowedRemaining": "{item} — luz coberta, restam {minutes} min",
+      "Extinguish": "Apagar Luz",
+      "Drop": "Deixar no Chão",
+      "DropTooltip": "Deixar esta luz no chão como uma Luz Ambiente",
+      "Stow": "Cobrir",
+      "StowTooltip": "Cobrir esta luz sem encerrá-la — a duração continua sendo contada enquanto ela está oculta",
+      "Uncover": "Descobrir",
+      "UncoverTooltip": "Descobrir esta luz para que volte a iluminar",
+      "Pickup": "Recolher Luz",
+      "PickupTooltip": "Retirar esta luz do chão e voltar a carregá-la",
+      "PickupSourceGone": "O item {item} foi recolhido, mas sua fonte de luz não está mais configurada e não pôde ser acesa novamente.",
+      "PickupBurnedOut": "A luz de {item} já havia se apagado antes de ser recolhida.",
+      "NoGm": "Nenhum mestre está conectado para colocar a luz no mapa. Peça a um mestre para entrar e tente novamente.",
+      "NoItem": "{name} não carrega mais {item}.",
+      "OnGround": "A luz de {item} está no chão. Recolha-a em vez de acendê-la novamente.",
+      "Refused": "Não foi possível acender {item} em {name}: o sistema de jogo ou outro módulo recusou o efeito de luz.",
+      "GmOnly": "Somente o mestre pode controlar as fontes de luz."
+    },
+    "Interactive": {
+      "Legend": "Fontes de Luz",
+      "Label": "Jogadores Podem Ligar e Desligar",
+      "Hint": "Mostra no mapa um controle que permite aos jogadores ligar e desligar esta luz. Para alcançar o controle, eles precisam mover um token para cima da luz ou para uma posição ao lado dela.",
+      "OutOfReach": "Você precisa se aproximar para alcançar essa luz."
+    },
     "Chat": {
       "ExpiredTitle": "A luz se apagou",
       "Expired": "A fonte de luz “{item}”, carregada por {actor}, se apagou.",
@@ -13,6 +210,9 @@
       "GroundExpiredTitle": "A luz se apagou",
       "GroundExpired": "A fonte de luz “{item}”, deixada no chão, se apagou.",
       "DragHint": "Arraste para a ficha de um personagem para adicionar ao inventário."
+    },
+    "Effect": {
+      "ExpiryEvent": "A duração da luz termina (Light Sources)"
     }
   }
 }

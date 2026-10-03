@@ -1,8 +1,8 @@
 {
-  "id": "tagmar3er_oficial",
+  "id": "tagmar3er-oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.37",
+  "version": "2.7.0-v14.1-official.38",
   "relationships": {
     "requires": [
       {
@@ -34,16 +34,19 @@
       {
         "id": "tagmar-ammu-nation",
         "type": "module",
+        "compatibility": {"minimum": "1.2.2-v14.1"},
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-ammu-nation/module.json"
       },
       {
         "id": "tagmartrade",
         "type": "module",
+        "compatibility": {"minimum": "1.2.3-v14.1"},
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmartrade/module.json"
       },
       {
         "id": "tagmar-calendario",
         "type": "module",
+        "compatibility": {"minimum": "0.7.6"},
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-calendario/module.json"
       }
     ]
@@ -85,7 +88,7 @@
     {
       "name": "criando-fichas-t3er",
       "label": "Tagmar — Criação de Fichas (Edição Sincronizada)",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/criando-fichas-t3er",
       "type": "Item",
       "ownership": {
@@ -96,7 +99,7 @@
     {
       "name": "reino-de-tagmar-t3er",
       "label": "Reino de Tagmar — Referências Oficiais (Edição Sincronizada)",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/reino-de-tagmar-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -107,7 +110,7 @@
     {
       "name": "objetos-magicos-t3er",
       "label": "Objetos Mágicos — Itens Oficiais (Edição Sincronizada)",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/objetos-magicos-t3er",
       "type": "Item",
       "ownership": {
@@ -118,7 +121,7 @@
     {
       "name": "objetos-magicos-regras-t3er",
       "label": "Objetos Mágicos — Guia e Regras (Edição Sincronizada)",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/objetos-magicos-regras-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -129,7 +132,7 @@
     {
       "name": "o-imperio-t3er",
       "label": "O Império — Referências Oficiais (Edição Sincronizada)",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/o-imperio-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -140,7 +143,7 @@
     {
       "name": "criaturas-t3er",
       "label": "Criaturas de Tagmar — Edição Oficial Sincronizada",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/criaturas-t3er",
       "type": "Actor",
       "ownership": {
@@ -151,7 +154,7 @@
     {
       "name": "registro-de-datas",
       "label": "Registro de Datas",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/registro-de-datas",
       "type": "JournalEntry",
       "ownership": {
@@ -162,7 +165,7 @@
     {
       "name": "terras-selvagens-t3er",
       "label": "Terras Selvagens — Criação de Fichas (Edição Sincronizada)",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/terras-selvagens-t3er",
       "type": "Item",
       "ownership": {
@@ -173,7 +176,7 @@
     {
       "name": "terras-selvagens-regras-t3er",
       "label": "Terras Selvagens — Regras (Edição Sincronizada)",
-      "system": "tagmar3er_oficial",
+      "system": "tagmar3er-oficial",
       "path": "packs/terras-selvagens-regras-t3er",
       "type": "JournalEntry",
       "ownership": {
@@ -195,6 +198,6 @@
     "units": "m"
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
-  "manifest": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/latest/download/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.37/tagmar3er-oficial.zip"
+  "manifest": "https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system.json",
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.38/tagmar3er-oficial.zip"
 }

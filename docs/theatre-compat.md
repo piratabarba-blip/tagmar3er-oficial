@@ -11,7 +11,7 @@ O sistema aplica um adaptador em memória quando o Theatre **original 3.4.2** es
 
 ## Arquitetura
 
-`modules/compat/theatre.js` registra wrappers identificados pelo ID do sistema no libWrapper. A inicialização aguarda o término de `renderChatLog` porque é nesse hook que o Theatre expõe sua classe. Um observador restrito à barra/capa do Theatre corrige miniaturas após alterações na configuração. O código é o mesmo nos dois sistemas.
+`modules/compat/theatre.js` registra wrappers identificados pelo ID do sistema no libWrapper. A inicialização aguarda o término de `renderChatLog` porque é nesse hook que o Theatre expõe sua classe. Um observador restrito à barra/capa do Theatre corrige miniaturas após alterações na configuração.
 
 `theatre-media.js` gerencia exclusivamente os vídeos criados pelo adaptador. Não substitui PIXI.Assets.load nem registra suas texturas no cache global.
 
@@ -31,4 +31,4 @@ O Theatre original é mantido pela League of Foundry Developers: https://github.
 
 ## Publicação
 
-Incluída no XXX 2.7.0-v14.1-rc.47 e no oficial 2.7.0-v14.1-official.35. Além dos testes isolados, o mantenedor confirmou o funcionamento no seu mundo antes de autorizar esta publicação. Recarregar os clientes após atualizar o sistema. Não é necessário substituir o Theatre nem instalar um fork.
+Incluída na versão 2.7.0-v14.1-official.35. Além dos testes isolados, o mantenedor confirmou o funcionamento no seu mundo antes de autorizar esta publicação. Recarregar os clientes após atualizar o sistema. Não é necessário substituir o Theatre nem instalar um fork.

@@ -13,7 +13,7 @@ export default class tagmarItemSheet extends foundry.appv1.sheets.ItemSheet {
     }
 
     get template() {
-        let layout = game.settings.get("tagmar3er_oficial", "sheetTemplate");
+        let layout = game.settings.get("tagmar3er-oficial", "sheetTemplate");
         if (this.object.type == "Efeito") {
             this['options']['height'] = 350;
             this['position']['height'] = 350;
@@ -37,9 +37,9 @@ export default class tagmarItemSheet extends foundry.appv1.sheets.ItemSheet {
             this['position']['height'] = 605;
         }
         if (!["base", "dark", "foundry"].includes(layout)) {
-            return 'systems/tagmar3er_oficial/templates/sheets/'+ this.object.type.toLowerCase() +'-ficha.hbs';
+            return 'systems/tagmar3er-oficial/templates/sheets/'+ this.object.type.toLowerCase() +'-ficha.hbs';
         } else {
-            return 'systems/tagmar3er_oficial/templates/sheets/'+ this.object.type.toLowerCase() +'-sheet.hbs';
+            return 'systems/tagmar3er-oficial/templates/sheets/'+ this.object.type.toLowerCase() +'-sheet.hbs';
         }
     }
 
@@ -109,8 +109,8 @@ export default class tagmarItemSheet extends foundry.appv1.sheets.ItemSheet {
 
     activateListeners(html) {
         super.activateListeners(html);
-        this.element.toggleClass("tagmar-dark-sheet", game.settings.get("tagmar3er_oficial", "sheetTemplate") === "dark");
-        this.element.toggleClass("tagmar-foundry-sheet", game.settings.get("tagmar3er_oficial", "sheetTemplate") === "foundry");
+        this.element.toggleClass("tagmar-dark-sheet", game.settings.get("tagmar3er-oficial", "sheetTemplate") === "dark");
+        this.element.toggleClass("tagmar-foundry-sheet", game.settings.get("tagmar3er-oficial", "sheetTemplate") === "foundry");
         this._activateTreasureMagicLinks(html);
         this._renderTreasureSecrets(html);
         if (!this.options.editable) return;

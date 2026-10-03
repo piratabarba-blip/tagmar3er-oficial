@@ -156,7 +156,7 @@ Hooks.once("init", function(){
   });
 
   Handlebars.registerHelper('settingTrue', function(setting, options) {
-    if (game.settings.get('tagmar3er_oficial', setting)) {
+    if (game.settings.get('tagmar3er-oficial', setting)) {
       return options.fn(this);
     }
     return options.inverse(this);
@@ -173,7 +173,7 @@ Hooks.once("init", function(){
   });
 
   Handlebars.registerHelper('settingFalse', function(setting, options) {
-    if (!game.settings.get('tagmar3er_oficial', setting)) {
+    if (!game.settings.get('tagmar3er-oficial', setting)) {
       return options.fn(this);
     }
     return options.inverse(this);
@@ -627,7 +627,7 @@ Hooks.on('renderSceneControls', function () {
 });
 
 function boasVindas () {
-  if(!game.user.getFlag("tagmar3er_oficial","boasVindas")) {
+  if(!game.user.getFlag("tagmar3er-oficial","boasVindas")) {
     let contento = '<h1 class="fairyDust rola" style="text-align:center;">Tagmar 3ER Oficial</h1>';
     let tagmar_prj = '<p class="rola_desc mediaeval">Conheça sobre o <a href="https://tagmar.com.br/" title="Acessar o site de Tagmar">Projeto Tagmar</a>.</p>';
     let sys_text = '<p class="rola_desc mediaeval">Saiba mais sobre o sistema <a href="https://foundryvtt.com/packages/tagmar">Tagmar RPG no Foundry</a> e também no <a href="https://github.com/marcoswalker/tagmar">GitHub</a>.</p>';
@@ -638,14 +638,14 @@ function boasVindas () {
       content: "<div class='bg-img-items'>" + contento + tagmar_prj + sys_text + youtChan + credits + "</div>"
     };
     ChatMessage.create(options);
-    game.user.setFlag("tagmar3er_oficial", "boasVindas", true);
+    game.user.setFlag("tagmar3er-oficial", "boasVindas", true);
   }
 }
 
 Hooks.on("preCreateToken", function (document, data) {
   if (!game.user.isGM) return;
   if (!game.modules.get('barbrawl')?.active) return;
-  const settingBars = game.settings.get("tagmar3er_oficial", "autoBars");
+  const settingBars = game.settings.get("tagmar3er-oficial", "autoBars");
   if (settingBars == "no") return;
   let resources = createBrawrs(document, settingBars);
   document.updateSource({
@@ -847,9 +847,9 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
   class TagmarSpeedProvider extends SpeedProvider {
       get colors() {
           return [
-              {id: "walk", default: 0xFFFF00, name: "tagmar3er_oficial.speeds.walk"},
-              {id: "dash", default: 0x00FF00, name: "tagmar3er_oficial.speeds.dash"},
-              {id: "run", default: 0xFF8000, name: "tagmar3er_oficial.speeds.run"}
+              {id: "walk", default: 0xFFFF00, name: "tagmar3er-oficial.speeds.walk"},
+              {id: "dash", default: 0x00FF00, name: "tagmar3er-oficial.speeds.dash"},
+              {id: "run", default: 0xFF8000, name: "tagmar3er-oficial.speeds.run"}
           ];
       }
 
@@ -866,7 +866,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
       }
   }
 
-  dragRuler.registerSystem("tagmar3er_oficial", TagmarSpeedProvider);
+  dragRuler.registerSystem("tagmar3er-oficial", TagmarSpeedProvider);
 });
 
 Hooks.once('diceSoNiceReady', function (dice) {
@@ -883,11 +883,11 @@ Hooks.once('diceSoNiceReady', function (dice) {
     font: 'Verdana',
     default: true,
   });
-  game.user.setFlag('dice-so-nice', 'appearance', { "global": {"system": "tagmar3er_oficial"}});
+  game.user.setFlag('dice-so-nice', 'appearance', { "global": {"system": "tagmar3er-oficial"}});
 });
 
 Hooks.on('renderChatMessageHTML', function (message, html) {
-  const fonte_size = game.settings.get('tagmar3er_oficial', 'fonteMsg');
+  const fonte_size = game.settings.get('tagmar3er-oficial', 'fonteMsg');
   const rolaDesc = html.querySelector('.rola_desc');
   if (rolaDesc) rolaDesc.style.fontSize = fonte_size > 0 ? `${fonte_size}%` : '100%';
   html.querySelector('.showDesc')?.addEventListener('click', function () {
@@ -1113,7 +1113,7 @@ async function rolarCritico(coluna, tabela_resol, user, actor, tipo, falha) {
     }
   }
   conteudo = conteudo + table + "</p>";
-  if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
+  if (game.settings.get('tagmar3er-oficial', 'dadosColoridos')) {
     dadosColoridos(resultado, roll);
   }
   roll.toMessage({
@@ -1136,7 +1136,7 @@ document.addEventListener('mousedown', function (event) {
 
 Hooks.on('targetToken', function (user, token, targeted) {
   if (!(token.actor.type === "Personagem" || token.actor.type === "NPC")) return;
-  const setting_target = game.settings.get("tagmar3er_oficial", "autoTarget");
+  const setting_target = game.settings.get("tagmar3er-oficial", "autoTarget");
   if (targeted && setting_target == "yes") setInf_ataque(token, user);
 });
 
@@ -1344,7 +1344,7 @@ async function centralizaToken () {
 }
 
 async function rollDialog() {
-  $.get("systems/tagmar3er_oficial/templates/roll_dialog.hbs", function (data) {
+  $.get("systems/tagmar3er-oficial/templates/roll_dialog.hbs", function (data) {
     let dialog = new Dialog({
       title: "Rolagem na Tabela",
       content: data,
@@ -1395,7 +1395,7 @@ async function rollTabela(colunaR) {
   else if (resultado == "roxo") PrintResult = "<h1 class='mediaeval rola' style='color: white; text-align:center;background-color:#0000ff;'>Azul Escuro - Absurdo</h1>";
   else if (resultado == "cinza") PrintResult = "<h1 class='mediaeval rola' style='color: black; text-align:center;background-color:#bfbfbf;'>Cinza - Impossível</h1>";
   let coluna = "<h4 class='mediaeval rola'>Coluna:" + coluna_table[0] + "</h4>";
-  if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
+  if (game.settings.get('tagmar3er-oficial', 'dadosColoridos')) {
     dadosColoridos(resultado, r);
   }
   r.toMessage({
@@ -1442,12 +1442,12 @@ async function rollResistencia(resist, f_ataque) {
   const Dresult = r.total;
   if ((Dresult >= valorSucess || Dresult == 20) && Dresult > 1) { // Sucesso
       stringSucesso = "<h1 class='mediaeval rola' style='text-align:center; color: white;background-color:#00a1e8;'>SUCESSO</h1>";
-      if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
+      if (game.settings.get('tagmar3er-oficial', 'dadosColoridos')) {
         dadosColoridos("azul", r);
       }
   } else {    // Insucesso
       stringSucesso = "<h1 class='mediaeval rola' style='text-align:center; color: white;background-color:#ff0000;'>FRACASSO</h1>";
-      if (game.settings.get('tagmar3er_oficial', 'dadosColoridos')) {
+      if (game.settings.get('tagmar3er-oficial', 'dadosColoridos')) {
         dadosColoridos("vermelho", r);
       }
   }  
@@ -1473,7 +1473,7 @@ Hooks.on("renderSidebarTab", async (object, html) => {
 Hooks.on("renderCombatTracker",async function (combatTracker, html) {
   html = $(html);
   if (combatTracker.combats.length > 0) {
-    if (!combatTracker.isPopout && game.settings.get('tagmar3er_oficial', 'popOutCombat')) combatTracker.renderPopout();
+    if (!combatTracker.isPopout && game.settings.get('tagmar3er-oficial', 'popOutCombat')) combatTracker.renderPopout();
   }
   if (!game.user.isGM) return;
   const combats = combatTracker.combats;

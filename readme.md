@@ -4,6 +4,8 @@ Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14,
 
 ## Autoria e histórico
 
+Para a alteração do identificador do pacote e os cuidados com mundos existentes, consulte o [plano de transição](docs/transicao-identificador.md). A versão com novo identificador é uma instalação separada; não converte mundos automaticamente.
+
 O sistema original para Foundry VTT foi desenvolvido por **Marcos Walker** e **Vinicius Fernandez**. Esta edição preserva essa autoria e deriva diretamente do trabalho original.
 
 O trabalho desta atualização compreende principalmente:

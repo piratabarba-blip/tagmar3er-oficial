@@ -38,7 +38,7 @@ function insideRoot(path) {
 const manifestPath = join(root, "system.json");
 if (!await exists(manifestPath)) throw new Error(`system.json ausente em ${root}`);
 const system = JSON.parse(await readFile(manifestPath, "utf8"));
-if (system.id !== "tagmar3er_oficial") errors.push(`ID inesperado: ${system.id}`);
+if (system.id !== "tagmar3er-oficial") errors.push(`ID inesperado: ${system.id}`);
 if (String(system.compatibility?.minimum) !== "14") errors.push("Compatibilidade mínima não está em V14");
 if (!String(system.compatibility?.verified ?? "").startsWith("14")) errors.push("Versão verificada não está em V14");
 if (!/^https:\/\/raw\.githubusercontent\.com\/[\w.-]+\/[\w.-]+\/(?:refs\/heads\/)?[\w./-]+\/system\.json$/i.test(String(system.manifest ?? ""))
@@ -57,6 +57,7 @@ const packNames = new Set();
 const packPaths = new Set();
 const packReport = [];
 for (const pack of system.packs ?? []) {
+  if (pack.system !== system.id) errors.push(`Sistema incorreto no pack: ${pack.name}`);
   if (packNames.has(pack.name)) errors.push(`Nome de pack duplicado: ${pack.name}`);
   if (packPaths.has(pack.path)) errors.push(`Caminho de pack duplicado: ${pack.path}`);
   packNames.add(pack.name);
@@ -85,6 +86,9 @@ for (const pack of system.packs ?? []) {
     try {
       await db.open();
       for await (const [key, value] of db.iterator()) {
+        if (key.includes("tagmar3er_oficial") || JSON.stringify(value).includes("tagmar3er_oficial")) {
+          errors.push(`${pack.name}: referência ao identificador anterior em ${key}`);
+        }
         keys.add(key);
         if (key.includes("folders!")) folders += 1;
         if (key.includes(`${documentKey}!`)) documents.push(value);

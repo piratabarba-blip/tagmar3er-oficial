@@ -5,7 +5,7 @@ export const SystemSettings = function() {
 
     registerTesourosTagmarSettings();
 
-    game.settings.register("tagmar3er_oficial", "sheetTemplate", {
+    game.settings.register("tagmar3er-oficial", "sheetTemplate", {
         name: "Ficha",
         hint: "Opção de imagem de fundo da ficha, padrão ou fundo do livro",
         scope: "client",
@@ -41,7 +41,7 @@ export const SystemSettings = function() {
         },
         onChange: () => location.reload()
       });
-      game.settings.register("tagmar3er_oficial", "autoBars", {
+      game.settings.register("tagmar3er-oficial", "autoBars", {
         name: "Barras automaticas (Bar Brawl)",
         hint: "Opção para criar barras automaticamente ao criar um token.(Nescessário módulo Bar Brawl)",
         scope: "world",
@@ -55,7 +55,7 @@ export const SystemSettings = function() {
           "barra_both": "Criar barras para tokens de Personagem e NPC."
         }
       });
-      game.settings.register("tagmar3er_oficial", "autoTarget", {
+      game.settings.register("tagmar3er-oficial", "autoTarget", {
         name: "Setar Def. Oponente ao marcar target",
         hint: "Com o token controlado selecionado, marcar target no token que deseja atacar.",
         scope: "world",
@@ -67,7 +67,7 @@ export const SystemSettings = function() {
           "no": "Desativar essa opção."
         }
       });
-      game.settings.register('tagmar3er_oficial', 'fonteMsg', {
+      game.settings.register('tagmar3er-oficial', 'fonteMsg', {
         name: 'Tamanho da fonte do chat',
         hint: 'Porcentagem do tamanho original (100%)',
         scope: 'client',
@@ -76,7 +76,7 @@ export const SystemSettings = function() {
         type: Number,
         onChange: () => {location.reload();}
       });
-      game.settings.register('tagmar3er_oficial', 'ajusteManual', {
+      game.settings.register('tagmar3er-oficial', 'ajusteManual', {
         name: 'Modificar ajuste manualmente',
         hint: 'Quando ativado, deixa de calcular os valores de ajuste da ficha de Personagem',
         scope: 'world',
@@ -84,7 +84,7 @@ export const SystemSettings = function() {
         default: false,
         type: Boolean
       });
-      game.settings.register('tagmar3er_oficial', 'popOutCombat', {
+      game.settings.register('tagmar3er-oficial', 'popOutCombat', {
         name: 'PopOut TurnOrder automático',
         hint: 'Quando um combate começa, Turn Order abre em popOut.',
         scope: 'client',
@@ -92,7 +92,7 @@ export const SystemSettings = function() {
         default: true,
         type: Boolean
       });
-      game.settings.register('tagmar3er_oficial', 'dadosColoridos', {
+      game.settings.register('tagmar3er-oficial', 'dadosColoridos', {
         name: 'Dados coloridos (Dice so nice)',
         hint: 'Dados 3d na cor do resultado.',
         scope: 'client',

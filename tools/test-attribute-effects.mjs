@@ -220,7 +220,7 @@ async function exercise(actor, settle, withProfession = true) {
 
 // Executa o getData verdadeiro com uma ActorSheet mínima e gravações adiadas.
 // Não simula cliques DOM; verifica o ciclo de renderização que os interrompia.
-globalThis.game = {system: {id: "tagmar_rpg"}, packs: new Map(), settings: {get: () => false}};
+globalThis.game = {system: {id: "tagmar3er-oficial"}, packs: new Map(), settings: {get: () => false}};
 globalThis.foundry = {appv1: {sheets: {ActorSheet: class {
     constructor(document) { this.document = document; this.options = {editable: true}; }
     getData(options) { return {...sheetData(this.document), options}; }
