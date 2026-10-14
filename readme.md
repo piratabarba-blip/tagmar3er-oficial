@@ -282,11 +282,23 @@ O projeto original de Marcos Walker está disponível em: https://github.com/mar
 
 ## Licenciamento e conteúdo
 
-O código original permanece sob a licença aplicável indicada em [LICENSE.md](LICENSE.md). Textos, regras, nomes e demais conteúdos derivados do Tagmar seguem a licença oficial **CC BY-NC-SA 3.0 Brasil**.
+### Atribuição ao Tagmar
 
-- Projeto Tagmar: https://tagmar.com.br/
-- Licenciamento oficial: https://tagmar.com.br/Licenciamento.aspx
-- Foundry Virtual Tabletop: https://foundryvtt.com/
+Este pacote utiliza e adapta materiais disponibilizados pelo [Projeto Tagmar](https://tagmar.com.br/), derivados da obra **Tagmar – RPG de Aventura Medieval (© 1991)**, de autoria de **Marcelo Rodrigues, Ygor Moraes Esteves da Silva, Julio Augusto Cezar Junior e Leonardo Nahoum Pache de Faria**. Os créditos das contribuições posteriores pertencem aos respectivos autores e colaboradores identificados nos livros e materiais do Projeto Tagmar.
+
+O conteúdo derivado do Tagmar e suas adaptações neste pacote são distribuídos sob a licença **Creative Commons Atribuição-NãoComercial-CompartilhaIgual 3.0 Brasil (CC BY-NC-SA 3.0 BR)**. A reutilização deve preservar a atribuição, respeitar a condição não comercial e manter a mesma licença para adaptações desse conteúdo, conforme os termos da licença.
+
+Nesta implementação, o material foi convertido e organizado em fichas e compêndios digitais, com adequações de formato e integração ao Foundry VTT. A autoria da obra original e dos materiais de referência não é transferida aos responsáveis por essa adaptação.
+
+- Fonte e declaração de licenciamento do Tagmar: https://tagmar.com.br/LicenciamentoUsado.aspx
+- Licença CC BY-NC-SA 3.0 BR: https://creativecommons.org/licenses/by-nc-sa/3.0/br/
+- Texto legal da licença: https://creativecommons.org/licenses/by-nc-sa/3.0/br/legalcode
+
+### Implementação e componentes
+
+A implementação do sistema para Foundry VTT mantém os créditos de **Marcos Walker e Vinicius Fernandez**. A licença do código-fonte é tratada separadamente em [LICENSE.md](LICENSE.md); ela não substitui a licença do conteúdo Tagmar nem as licenças de terceiros.
+
+Foundry Virtual Tabletop: https://foundryvtt.com/
 
 Recursos pertencentes ao Foundry são apenas referenciados pelos caminhos fornecidos pela própria plataforma e não são redistribuídos neste repositório. Imagens e componentes de terceiros somente poderão permanecer quando sua licença e atribuição forem verificadas.
 

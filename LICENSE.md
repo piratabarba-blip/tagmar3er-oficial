@@ -12,7 +12,17 @@ Texto integral da licença: https://www.gnu.org/licenses/gpl-3.0.html
 
 Textos, regras, nomes, fichas, imagens, compêndios e demais materiais derivados do projeto Tagmar seguem a licença oficial **Creative Commons Atribuição-NãoComercial-CompartilhaIgual 3.0 Brasil (CC BY-NC-SA 3.0 BR)**.
 
-Licenciamento oficial: https://tagmar.com.br/Licenciamento.aspx
+### Atribuição e identificação da adaptação
+
+Os materiais do Projeto Tagmar utilizados neste pacote derivam da obra **Tagmar – RPG de Aventura Medieval (© 1991)**, de autoria de **Marcelo Rodrigues, Ygor Moraes Esteves da Silva, Julio Augusto Cezar Junior e Leonardo Nahoum Pache de Faria**. As contribuições posteriores mantêm os créditos dos respectivos autores e colaboradores identificados nos livros e materiais do Projeto Tagmar.
+
+Esta implementação converte e organiza o material em fichas e compêndios digitais, com adequações de formato e integração ao Foundry VTT. O conteúdo derivado e essas adaptações permanecem sob **CC BY-NC-SA 3.0 BR**, com atribuição, uso não comercial e compartilhamento pela mesma licença, conforme seus termos. Os créditos de **Marcos Walker e Vinicius Fernandez** pela implementação do sistema não substituem os créditos dos autores do material Tagmar.
+
+Fonte: https://tagmar.com.br/
+
+Licenciamento oficial: https://tagmar.com.br/LicenciamentoUsado.aspx
+
+Resumo da licença: https://creativecommons.org/licenses/by-nc-sa/3.0/br/
 
 Texto legal: https://creativecommons.org/licenses/by-nc-sa/3.0/br/legalcode
 
