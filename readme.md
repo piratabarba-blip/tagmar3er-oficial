@@ -2,7 +2,22 @@
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.38**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.41**, com identificador **`tagmar3er-oficial`**.
+
+### Ferramentas de mapa
+
+Integradas ao sistema, sem instalar outro módulo:
+
+- **Escala da imagem em grupo:** selecione os tokens, deixe o mouse sobre o mapa e segure **G + roda**. Sem seleção, ajusta o token sob o mouse. Mantém o espaço ocupado na grade, posição, proporções e espelhamento. Cada passo aumenta ou diminui proporcionalmente a escala; não iguala tokens de tamanhos diferentes.
+- **Restaurar escala:** **G + 0** (zero superior ou numérico) recupera a escala guardada antes do primeiro ajuste. A referência fica no token da cena e permanece após recarregar. Não altera o token de protótipo nem a ficha do ator.
+- **Apontador:** segure **P** com o mouse sobre o mapa para mostrar a manopla dourada aos participantes na mesma cena e andar. Solte para esconder. Não move câmeras nem revela áreas do mapa. O apontador desaparece também ao sair da janela ou trocar de cena; uma mensagem perdida expira em cerca de 1,6 segundo.
+- **Barras do Bar Brawl:** em **Configurações do jogo → Tagmar → Mapa — exibição das barras (Bar Brawl)**, escolha configuração individual (padrão), somente ao passar o mouse ou mouse/seleção. A escolha vale para todos os tokens do mundo e para todos os participantes. Preserva barras secretas, permissões de dono/mestre e restrições de barra cheia, vazia ou em combate. Nos dois modos globais, Alt sozinho não revela todas as barras. Voltar à configuração individual restaura o comportamento original sem regravar tokens ou recarregar o mundo. A integração requer Bar Brawl ativo e atua nas barras do mapa 2D; não altera os campos de recursos no HUD nem as fichas.
+
+Em **Configurações do jogo → Tagmar**, procure as opções iniciadas por **Mapa**: ativação de cada recurso, autorização de jogadores para usar o apontador, passo da escala e formato Manopla dourada/Seta. As teclas **G**, **P** e de restauração podem ser remapeadas em **Configuração de controles**. **Ajustar e restaurar a escala com esta ferramenta é exclusivo do mestre**, inclusive em tokens pertencentes a jogadores. Todos veem o apontador; jogadores autorizados a apontar também precisam da permissão nativa de pings.
+
+A escala fica entre 20% e 500% nos dois eixos; proporções já fora dessa faixa que não possam ser preservadas são ignoradas. A roda sobre formulários ou sem G pressionado permanece inalterada. G pode ser remapeado em Configuração de controles caso haja um atalho personalizado concorrente.
+
+Recursos validados com testes automatizados e confirmados em sessão real de Foundry 14.369 pelo mantenedor.
 
 ## Índice
 
