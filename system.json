@@ -2,7 +2,7 @@
   "id": "tagmar3er-oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.42",
+  "version": "2.7.0-v14.1-official.43-beta.1",
   "relationships": {
     "requires": [
       {
@@ -90,7 +90,8 @@
     "css/modern-dialogs.css",
     "css/dark-sheet.css",
     "css/foundry-sheet.css",
-    "css/vehicle-sheet.css"
+    "css/vehicle-sheet.css",
+    "css/troop-sheet.css"
   ],
   "packs": [
     {
@@ -191,6 +192,17 @@
         "PLAYER": "OBSERVER",
         "GAMEMASTER": "OWNER"
       }
+    },
+    {
+      "name": "combate-grande-escala",
+      "label": "Combate em Grande Escala — Tropas (Extraoficial)",
+      "system": "tagmar3er-oficial",
+      "path": "packs/combate-grande-escala",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
     }
   ],
   "languages": [
@@ -211,6 +223,6 @@
     "units": "m"
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
-  "manifest": "https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.42/tagmar3er-oficial.zip"
+  "manifest": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.43-beta.1/system.json",
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.43-beta.1/system.zip"
 }
