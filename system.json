@@ -2,14 +2,16 @@
   "id": "tagmar3er-oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.41",
+  "version": "2.7.0-v14.1-official.42",
   "relationships": {
     "requires": [
       {
         "id": "barbrawl",
         "type": "module",
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/barbrawl/module.json",
-        "compatibility": {"minimum": "1.9.3.1"}
+        "compatibility": {
+          "minimum": "1.9.3.1"
+        }
       },
       {
         "id": "lib-wrapper",
@@ -34,19 +36,25 @@
       {
         "id": "tagmar-ammu-nation",
         "type": "module",
-        "compatibility": {"minimum": "1.2.2-v14.1"},
+        "compatibility": {
+          "minimum": "1.2.2-v14.1"
+        },
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-ammu-nation/module.json"
       },
       {
         "id": "tagmartrade",
         "type": "module",
-        "compatibility": {"minimum": "1.2.3-v14.1"},
+        "compatibility": {
+          "minimum": "1.2.3-v14.1"
+        },
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmartrade/module.json"
       },
       {
         "id": "tagmar-calendario",
         "type": "module",
-        "compatibility": {"minimum": "0.7.6"},
+        "compatibility": {
+          "minimum": "0.7.6"
+        },
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-calendario/module.json"
       }
     ]
@@ -72,8 +80,7 @@
     "verified": "14.369",
     "maximum": "14"
   },
-  "scripts": [
-  ],
+  "scripts": [],
   "esmodules": [
     "modules/tagmar.js"
   ],
@@ -82,7 +89,8 @@
     "css/sheet.css",
     "css/modern-dialogs.css",
     "css/dark-sheet.css",
-    "css/foundry-sheet.css"
+    "css/foundry-sheet.css",
+    "css/vehicle-sheet.css"
   ],
   "packs": [
     {
@@ -189,15 +197,20 @@
     {
       "lang": "pt-BR",
       "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
       "path": "lang/pt-BR-light-sources.json",
       "module": "light-sources"
     }
   ],
   "grid": {
-    "distance": 1.0,
+    "distance": 1,
     "units": "m"
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
   "manifest": "https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.41/tagmar3er-oficial.zip"
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.42/tagmar3er-oficial.zip"
 }

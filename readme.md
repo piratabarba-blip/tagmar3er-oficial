@@ -2,7 +2,7 @@
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.41**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.42**, com identificador **`tagmar3er-oficial`**.
 
 ### Ferramentas de mapa
 
@@ -18,6 +18,14 @@ Em **Configurações do jogo → Tagmar**, procure as opções iniciadas por **M
 A escala fica entre 20% e 500% nos dois eixos; proporções já fora dessa faixa que não possam ser preservadas são ignoradas. A roda sobre formulários ou sem G pressionado permanece inalterada. G pode ser remapeado em Configuração de controles caso haja um atalho personalizado concorrente.
 
 Recursos validados com testes automatizados e confirmados em sessão real de Foundry 14.369 pelo mantenedor.
+
+## Veículos e armas de guerra
+
+Crie um ator **Veículo / Máquina** para embarcações, carroças e máquinas de guerra. A ficha usa ABS, ARM, VB, tripulação, pertences e biografia, com o mesmo padrão visual das demais fichas.
+
+Na aba **Combate**, monte itens **Arma de Guerra**, configure a defesa e os ajustes e clique no nome da arma para atacar. Vincule vários personagens às armas e manobras, com busca por nome e habilidade, e escolha quem fará cada teste; os vínculos mostram nível e total atual. O mestre também pode informar um total manual.
+
+Este recurso é uma **adaptação extraoficial**, com valores definidos pela mesa. [Consulte o guia de veículos e armas de guerra](docs/veiculos.md).
 
 ## Índice
 
@@ -36,7 +44,7 @@ Recursos validados com testes automatizados e confirmados em sessão real de Fou
 
 ### 1. Confira os requisitos
 
-- Foundry VTT **14**, verificado pelo pacote na compilação **14.368**. Esta versão do sistema não declara suporte às gerações anteriores nem à V15.
+- Foundry VTT **14**, verificado pelo pacote na compilação **14.369**. Esta versão do sistema não declara suporte às gerações anteriores nem à V15.
 - Acesso de administrador para instalar pacotes e de Mestre para configurar o mundo.
 - Uma instalação licenciada do Foundry. O sistema Tagmar é gratuito; a licença do Foundry é separada.
 - Backup dos mundos e dos arquivos de campanha antes de atualizar qualquer instalação existente.
