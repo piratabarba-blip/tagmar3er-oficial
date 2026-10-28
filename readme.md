@@ -1,3 +1,14 @@
+<!-- tagmar-beta-migration-notice -->
+> [!IMPORTANT]
+> **Instalou a prévia de Combate em Grande Escala? Confira sua versão.**
+>
+> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 28/10/2026 é **`2.7.0-v14.1-official.44`**.
+>
+> Para sair da beta com manifesto fixo, copie o [manifesto permanente](https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json), abra **Instalar Sistema → URL do Manifesto**, cole o endereço e instale. Faça isso uma única vez; as próximas versões poderão ser recebidas pelo botão **Atualizar**.
+>
+> **Não desinstale o sistema nem apague mundos ou fichas.** Faça backup do mundo antes de atualizar. Quem já usa o manifesto permanente pode atualizar normalmente; quem instalar agora por ele recebe a versão atual.
+<!-- /tagmar-beta-migration-notice -->
+
 # Tagmar 3ER Oficial para Foundry VTT 14
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
