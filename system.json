@@ -2,7 +2,7 @@
   "id": "tagmar3er-oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.43-beta.1",
+  "version": "2.7.0-v14.1-official.44",
   "relationships": {
     "requires": [
       {
@@ -203,6 +203,17 @@
         "PLAYER": "OBSERVER",
         "GAMEMASTER": "OWNER"
       }
+    },
+    {
+      "name": "combate-grande-escala-livro",
+      "label": "Combate em Grande Escala — Livro e Guia (Extraoficial)",
+      "system": "tagmar3er-oficial",
+      "path": "packs/combate-grande-escala-livro",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
     }
   ],
   "languages": [
@@ -223,6 +234,6 @@
     "units": "m"
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
-  "manifest": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.43-beta.1/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.43-beta.1/system.zip"
+  "manifest": "https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json",
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.44/system.zip"
 }

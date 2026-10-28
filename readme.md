@@ -1,10 +1,8 @@
-> **Prévia de testes 2.7.0-v14.1-official.43-beta.1:** nova ficha de Tropa e combate em grande escala. [Instalação e roteiro de testes](docs/teste-combate-em-grande-escala.md).
-
 # Tagmar 3ER Oficial para Foundry VTT 14
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.42**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.44**, com identificador **`tagmar3er-oficial`**.
 
 ### Ferramentas de mapa
 
@@ -66,7 +64,7 @@ https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system
 
 Use esse endereço para acompanhar as atualizações do oficial. Ele é um manifesto JSON, não o endereço da página do GitHub nem um ZIP. A instalação por manifesto pode ser usada independentemente de o sistema já aparecer na busca do catálogo.
 
-Para instalar especificamente a versão que serve de referência a este guia, use o [manifesto da official.38](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.38/system.json). Não use `releases/latest` como atalho para esta edição: esse endereço foi mantido para a distribuição com o identificador anterior.
+Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.44](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.44/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
 
 ### 3. Crie e abra um mundo
 
@@ -351,4 +349,14 @@ A atualização, a organização técnica, a documentação e parte das auditori
 
 ## Combate em Grande Escala (extraoficial)
 
-Ficha de **Tropa** com EF, absorção, comando, moral, aparatos e fortificações. Baseada no suplemento de **Fábio Carvalho Magalhães (19/02/2024)**. Inclui um compêndio separado com um modelo e a tropa do exemplo do livro. [Como usar e convenções da adaptação](docs/combate-em-grande-escala.md). Material derivado sob [CC BY-NC-SA 3.0 Brasil](https://creativecommons.org/licenses/by-nc-sa/3.0/br/). Prévia em teste local.
+Ficha de **Tropa** com EF, absorção, comando, moral, aparatos e fortificações. Baseada no suplemento de **Fábio Carvalho Magalhães (19/02/2024)**. Inclui um compêndio separado com um modelo e a tropa do exemplo do livro. [Como usar e convenções da adaptação](docs/combate-em-grande-escala.md). Material derivado sob [CC BY-NC-SA 3.0 Brasil](https://creativecommons.org/licenses/by-nc-sa/3.0/br/). Disponível na distribuição atual.
+
+O compêndio **Combate em Grande Escala — Livro e Guia (Extraoficial)** inclui instruções da ficha e o PDF original completo. Acesse também pelo botão **Livro / guia** da Tropa. Veículos têm instruções na Biografia e ajudas (?) nos campos, sem substituir as anotações do usuário.
+
+### Batalha guiada e recuperação
+
+Abra **Batalha em massa** na aba Combate ou no monitor, com tokens de Tropa e seus exércitos definidos. O painel conduz preparativos, ataques extras e principais, apoio e resolução. Os danos ficam registrados até o encerramento da rodada; botões do chat continuam disponíveis sem duplicar registros.
+
+Após a resolução, o painel mostra as perdas e a recuperação prevista. A ABS dos equipamentos se restaura nos preparativos seguintes conforme a EF atual. Resgatar feridos exige a confirmação do mesmo hexágono, uma rolagem na coluna do estágio e uma rodada de ocupação. Aparatos e muralhas exigem reparos; armadilhas destruídas não se restauram. Terreno, moral, recursos e casos especiais continuam sob avaliação do mestre.
+
+EF e ABS ficam abaixo do nome em todas as abas. A calculadora preserva seu estado aberto ao editar. Consulte o [guia do combate em grande escala](docs/combate-em-grande-escala.md) e o compêndio Livro e Guia.
