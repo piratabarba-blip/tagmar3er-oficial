@@ -2,7 +2,7 @@
 > [!IMPORTANT]
 > **Instalou a prévia de Combate em Grande Escala? Confira sua versão.**
 >
-> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 28/10/2026 é **`2.7.0-v14.1-official.44`**.
+> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 28/10/2026 é **`2.7.0-v14.1-official.45`**.
 >
 > Para sair da beta com manifesto fixo, copie o [manifesto permanente](https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json), abra **Instalar Sistema → URL do Manifesto**, cole o endereço e instale. Faça isso uma única vez; as próximas versões poderão ser recebidas pelo botão **Atualizar**.
 >
@@ -13,13 +13,14 @@
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.44**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.45**, com identificador **`tagmar3er-oficial`**.
 
 ### Ferramentas de mapa
 
 Integradas ao sistema, sem instalar outro módulo:
 
 - **Mover a barra de macros:** arraste pela alça de pontos à esquerda da hotbar. O botão de seta curva restaura a posição original. A posição fica salva neste navegador, separadamente por usuário e mundo, e se ajusta ao tamanho da janela e à escala da interface. A alça também aceita as teclas de seta; Esc cancela um arraste.
+- **Reorganizar macros:** com a hotbar desbloqueada, arraste o ícone de uma macro para outro espaço. O Foundry move o atalho ou troca os atalhos quando o destino está ocupado. Arrastar itens para criar macros de rolagem Tagmar continua funcionando.
 
 - **Escala da imagem em grupo:** selecione os tokens, deixe o mouse sobre o mapa e segure **G + roda**. Sem seleção, ajusta o token sob o mouse. Mantém o espaço ocupado na grade, posição, proporções e espelhamento. Cada passo aumenta ou diminui proporcionalmente a escala; não iguala tokens de tamanhos diferentes.
 - **Restaurar escala:** **G + 0** (zero superior ou numérico) recupera a escala guardada antes do primeiro ajuste. A referência fica no token da cena e permanece após recarregar. Não altera o token de protótipo nem a ficha do ator.
@@ -77,7 +78,7 @@ https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system
 
 Use esse endereço para acompanhar as atualizações do oficial. Ele é um manifesto JSON, não o endereço da página do GitHub nem um ZIP. A instalação por manifesto pode ser usada independentemente de o sistema já aparecer na busca do catálogo.
 
-Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.44](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.44/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
+Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.45](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.45/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
 
 ### 3. Crie e abra um mundo
 
