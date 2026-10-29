@@ -2,7 +2,7 @@
 > [!IMPORTANT]
 > **Instalou a prévia de Combate em Grande Escala? Confira sua versão.**
 >
-> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 28/10/2026 é **`2.7.0-v14.1-official.45`**.
+> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 29/10/2026 é **`2.7.0-v14.1-official.46`**.
 >
 > Para sair da beta com manifesto fixo, copie o [manifesto permanente](https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json), abra **Instalar Sistema → URL do Manifesto**, cole o endereço e instale. Faça isso uma única vez; as próximas versões poderão ser recebidas pelo botão **Atualizar**.
 >
@@ -13,7 +13,15 @@
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.45**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.46**, com identificador **`tagmar3er-oficial`**.
+
+### Atualização de 29/10/2026
+
+Correções do chat de dano e atualização das rotinas compartilhadas de resistência e críticos. O Tagmar FX continua exclusivo da edição XXX.
+
+Atualize também **Grande Calendário 1.1.3** e **Gestão de Munições 1.2.3-v14.1**. O relógio automático do calendário pausa durante o combate para evitar descontar o tempo duas vezes; cada rodada continua valendo 15 segundos. A janela de munições aceita Enter nos campos sem erro nem fechamento.
+
+Os compêndios e as mídias distribuídas são os mesmos da versão anterior.
 
 ### Ferramentas de mapa
 
@@ -78,7 +86,7 @@ https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system
 
 Use esse endereço para acompanhar as atualizações do oficial. Ele é um manifesto JSON, não o endereço da página do GitHub nem um ZIP. A instalação por manifesto pode ser usada independentemente de o sistema já aparecer na busca do catálogo.
 
-Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.45](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.45/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
+Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.46](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.46/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
 
 ### 3. Crie e abra um mundo
 
@@ -184,7 +192,7 @@ Estes **oito módulos são declarados como dependências pelo sistema**, não ap
 | **Polyglot** | Idiomas no chat, com provedor de línguas registrado pelo Tagmar. | 2.9.2 | [Instalar](https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/polyglot/module.json) |
 | **Tagmar Gestão de Munições** | Cadastro e compartilhamento de reservas de munição entre armas. | **1.2.2-v14.1**, mínimo exigido | [Instalar](https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-ammu-nation/module.json) |
 | **Tagmar Transações** | Envio de pertences para outro jogador conectado e com personagem atribuído. | **1.2.3-v14.1**, mínimo exigido | [Instalar](https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmartrade/module.json) |
-| **Tagmar — Grande Calendário** | Calendário, dia/noite, clima, vento, luas e marés. | **1.1.1**, recomendada | [Instalar](https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-calendario/module.json) |
+| **Tagmar — Grande Calendário** | Calendário, dia/noite, clima, vento, luas e marés. | **1.1.3**, mínimo exigido | [Instalar](https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-calendario/module.json) |
 
 Versões de referência não são uma promessa de compatibilidade com qualquer versão futura. Use os manifestos declarados pelo sistema e confira as notas antes de trocar uma distribuição. A edição indicada do **Bar Brawl** inclui uma correção para atualizações parciais de token, relevante para efeitos de iluminação.
 
@@ -213,7 +221,7 @@ O seletor de destinatários não inclui usuários offline, sem personagem atribu
 
 ### Grande Calendário
 
-**Módulo recomendado: Tagmar — Grande Calendário 1.1.1**, verificado no Foundry **14.369**. Ele já integra as dependências obrigatórias deste sistema; esta recomendação destaca os recursos disponíveis e não altera os requisitos de instalação.
+**Módulo recomendado: Tagmar — Grande Calendário 1.1.3**, verificado no Foundry **14.369**. Ele já integra as dependências obrigatórias deste sistema; esta recomendação destaca os recursos disponíveis e não altera os requisitos de instalação.
 
 - Dia/noite gradual, estações e clima por bioma, latitude e altitude.
 - Velocidade e direção do vento, fases/movimentos das três luas e marés lunares.
