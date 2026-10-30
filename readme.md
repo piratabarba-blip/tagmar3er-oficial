@@ -2,7 +2,7 @@
 > [!IMPORTANT]
 > **Instalou a prévia de Combate em Grande Escala? Confira sua versão.**
 >
-> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 29/10/2026 é **`2.7.0-v14.1-official.46`**.
+> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 30/10/2026 é **`2.7.0-v14.1-official.47`**.
 >
 > Para sair da beta com manifesto fixo, copie o [manifesto permanente](https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json), abra **Instalar Sistema → URL do Manifesto**, cole o endereço e instale. Faça isso uma única vez; as próximas versões poderão ser recebidas pelo botão **Atualizar**.
 >
@@ -13,7 +13,15 @@
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.46**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.47**, com identificador **`tagmar3er-oficial`**.
+
+### Atualização de 30/10/2026
+
+Os atalhos de rolagem, tabelas de ações e resistências, calendário, votação e tesouros ficam fixos na coluna principal da esquerda, com borda dourada. Quando o módulo Viagens e Expedições estiver ativo, seu atalho aparece no fim desse grupo, também dourado. As permissões originais de cada ferramenta são respeitadas.
+
+A opção **Mapa — atalhos fixos na barra esquerda**, nas configurações do sistema, vem ligada e pode ser desmarcada para restaurar a organização anterior. A preferência é individual por cliente. Os atalhos abrem as ferramentas sem trocar a camada ativa; em telas pequenas, a coluna aceita rolagem.
+
+Esta atualização não instala nem publica o módulo Viagens, que continua em teste. Não há mudanças em regras, compêndios, imagens, licenças ou dependências.
 
 ### Atualização de 29/10/2026
 
@@ -86,7 +94,7 @@ https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system
 
 Use esse endereço para acompanhar as atualizações do oficial. Ele é um manifesto JSON, não o endereço da página do GitHub nem um ZIP. A instalação por manifesto pode ser usada independentemente de o sistema já aparecer na busca do catálogo.
 
-Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.46](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.46/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
+Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.47](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.47/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
 
 ### 3. Crie e abra um mundo
 
