@@ -2,7 +2,7 @@
 > [!IMPORTANT]
 > **Instalou a prévia de Combate em Grande Escala? Confira sua versão.**
 >
-> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 30/10/2026 é **`2.7.0-v14.1-official.47`**.
+> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 02/11/2026 é **`2.7.0-v14.1-official.48`**.
 >
 > Para sair da beta com manifesto fixo, copie o [manifesto permanente](https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json), abra **Instalar Sistema → URL do Manifesto**, cole o endereço e instale. Faça isso uma única vez; as próximas versões poderão ser recebidas pelo botão **Atualizar**.
 >
@@ -13,7 +13,13 @@
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.47**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.48**, com identificador **`tagmar3er-oficial`**.
+
+### Atualização de 02/11/2026
+
+O **Token Action HUD Tagmar 0.1.0** passa a ser recomendado como módulo opcional. Quem quiser uma barra de ataques, habilidades, magias e testes do token pode [instalar pelo manifesto](https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/token-action-hud-tagmar/module.json). O HUD exige **Token Action HUD Core 2.1.2 (série 2.1)**, que depende de **socketlib**. Ative os três no Gerenciador de Módulos do mundo; desative o Token Action HUD antigo se estiver ativo.
+
+O sistema continua funcionando sem o HUD. Esta versão altera somente o manifesto e este guia; mantém código, regras, compêndios, imagens e licenças da versão anterior.
 
 ### Atualização de 30/10/2026
 
@@ -94,7 +100,7 @@ https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system
 
 Use esse endereço para acompanhar as atualizações do oficial. Ele é um manifesto JSON, não o endereço da página do GitHub nem um ZIP. A instalação por manifesto pode ser usada independentemente de o sistema já aparecer na busca do catálogo.
 
-Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.47](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.47/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
+Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.48](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.48/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
 
 ### 3. Crie e abra um mundo
 
