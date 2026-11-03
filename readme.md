@@ -2,7 +2,7 @@
 > [!IMPORTANT]
 > **Instalou a prévia de Combate em Grande Escala? Confira sua versão.**
 >
-> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 02/11/2026 é **`2.7.0-v14.1-official.48`**.
+> Na tela inicial do Foundry, abra **Sistemas de Jogo** e confira o número no cartão do sistema. Se aparecer **`2.7.0-v14.1-official.43-beta.1`** ou outro número com **`beta`**, você está usando uma prévia. A versão definitiva publicada em 02/11/2026 é **`2.7.0-v14.1-official.49`**.
 >
 > Para sair da beta com manifesto fixo, copie o [manifesto permanente](https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json), abra **Instalar Sistema → URL do Manifesto**, cole o endereço e instale. Faça isso uma única vez; as próximas versões poderão ser recebidas pelo botão **Atualizar**.
 >
@@ -13,9 +13,21 @@
 
 Implementação comunitária do **Tagmar 3** para o Foundry Virtual Tabletop 14, acompanhada de compêndios oficiais sincronizados com as fontes públicas do projeto Tagmar.
 
-Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.48**, com identificador **`tagmar3er-oficial`**.
+Este guia apresenta a instalação, o primeiro personagem, o conteúdo dos compêndios e as integrações da edição oficial. A referência desta documentação é a versão **2.7.0-v14.1-official.49**, com identificador **`tagmar3er-oficial`**.
 
-### Atualização de 02/11/2026
+### Atualização validada de 02/11/2026
+
+Atualização validada no Foundry VTT 14.369.
+
+- Tradução do Carousel Combat Tracker para português quando o módulo estiver ativo; comandos laterais sempre visíveis, respeitando as permissões do módulo.
+- Nomes dos tokens posicionados abaixo das barras visíveis do Bar Brawl. A opção do sistema permite restaurar a posição nativa.
+- Rolagens de combate, habilidades e operadores de veículos reconhecem ajustes temporários de efeitos, preservando os bônus manuais.
+
+A edição Oficial mantém suas restrições de conteúdo e licenciamento. Tagmar FX continua exclusivo do XXX e não é dependência do Oficial.
+
+Atualize pelo manifesto permanente e depois atualize os módulos. Os compêndios, imagens e licenças desta versão são idênticos aos da publicação anterior. Arquivos pessoais devem ficar fora das pastas de sistemas e módulos, por exemplo na pasta do mundo.
+
+### Atualização anterior de 02/11/2026 — HUD opcional
 
 O **Token Action HUD Tagmar 0.1.0** passa a ser recomendado como módulo opcional. Quem quiser uma barra de ataques, habilidades, magias e testes do token pode [instalar pelo manifesto](https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/token-action-hud-tagmar/module.json). O HUD exige **Token Action HUD Core 2.1.2 (série 2.1)**, que depende de **socketlib**. Ative os três no Gerenciador de Módulos do mundo; desative o Token Action HUD antigo se estiver ativo.
 
@@ -100,7 +112,7 @@ https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/main/system
 
 Use esse endereço para acompanhar as atualizações do oficial. Ele é um manifesto JSON, não o endereço da página do GitHub nem um ZIP. A instalação por manifesto pode ser usada independentemente de o sistema já aparecer na busca do catálogo.
 
-Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.48](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.48/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
+Para instalar esta versão específica, use o [manifesto da 2.7.0-v14.1-official.49](https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.49/system.json). Para acompanhar as próximas atualizações, prefira o manifesto permanente acima.
 
 ### 3. Crie e abra um mundo
 

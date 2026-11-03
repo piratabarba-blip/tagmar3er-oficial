@@ -2,7 +2,7 @@
   "id": "tagmar3er-oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.48",
+  "version": "2.7.0-v14.1-official.49",
   "relationships": {
     "requires": [
       {
@@ -237,6 +237,12 @@
       "name": "Português (Brasil)",
       "path": "lang/pt-BR-light-sources.json",
       "module": "light-sources"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR-carousel.json",
+      "module": "combat-tracker-dock"
     }
   ],
   "grid": {
@@ -245,5 +251,5 @@
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
   "manifest": "https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.48/system.zip"
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.49/system.zip"
 }
