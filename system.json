@@ -2,7 +2,7 @@
   "id": "tagmar3er-oficial",
   "title": "Tagmar 3ER Oficial",
   "description": "Sistema Tagmar 3 para Foundry VTT 14, com compêndios oficiais sincronizados.",
-  "version": "2.7.0-v14.1-official.55",
+  "version": "2.7.0-v14.1-official.56",
   "relationships": {
     "requires": [
       {
@@ -74,7 +74,16 @@
         "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-viagens/module.json",
         "reason": "Planeje rotas e acompanhe a viagem no mapa e minimapa.",
         "compatibility": {
-          "minimum": "1.1.0"
+          "minimum": "1.1.1"
+        }
+      },
+      {
+        "id": "tagmar-personagens",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/piratabarba-blip/modulos_foundry/v14/tagmar-personagens/module.json",
+        "reason": "Crie Personagens e PNJs por raça, profissão e estágio, com prévia e cadeados.",
+        "compatibility": {
+          "minimum": "0.1.0"
         }
       }
     ]
@@ -261,5 +270,5 @@
   },
   "url": "https://github.com/piratabarba-blip/tagmar3er-oficial",
   "manifest": "https://raw.githubusercontent.com/piratabarba-blip/tagmar3er-oficial/refs/heads/main/system.json",
-  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.55/system.zip"
+  "download": "https://github.com/piratabarba-blip/tagmar3er-oficial/releases/download/v2.7.0-v14.1-official.56/system.zip"
 }
