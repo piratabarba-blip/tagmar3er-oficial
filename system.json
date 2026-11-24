@@ -125,6 +125,17 @@
   ],
   "packs": [
     {
+      "name": "caracterizacoes",
+      "label": "Tagmar — Caracterizações",
+      "system": "tagmar3er-oficial",
+      "path": "packs/caracterizacoes",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "GAMEMASTER": "OWNER"
+      }
+    },
+    {
       "name": "criando-fichas-t3er",
       "label": "Tagmar — Criação de Fichas (Edição Sincronizada)",
       "system": "tagmar3er-oficial",
