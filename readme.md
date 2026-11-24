@@ -1,4 +1,6 @@
-## Tagmar 3ER Oficial — 2.7.0-v14.1-official.58
+## Tagmar 3ER Oficial — 2.7.0-v14.1-official.59
+
+- Grupos de Armas na aba Combate, entre a busca e os ataques, em fichas por pontos e por sorteio. Cada sigla abre a lista de armas do Compêndio.
 
 - As descrições das fichas de itens agora acompanham a altura da janela, aproveitando o espaço abaixo. Textos longos continuam com rolagem.
 - Ajuste aplicado às fichas equivalentes de magias, habilidades, técnicas, armas, defesas, pertences, raças, profissões e transportes, incluindo o tema de livro.
