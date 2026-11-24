@@ -1,4 +1,6 @@
-## Tagmar 3ER Oficial — 2.7.0-v14.1-official.60
+## Tagmar 3ER Oficial — 2.7.0-v14.1-official.61
+
+- O nível comprado de cada Grupo de Armas fica limitado ao Estágio do personagem, por pontos e por sorteio.
 
 - Compêndio pesquisável de Caracterizações com 203 traços em 19 grupos e a regra de aquisição. Na aba Biografia, use Escolher Caracterizações para registrar traços, variantes e custos nas fichas por pontos e por sorteio.
 
